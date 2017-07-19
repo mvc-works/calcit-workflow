@@ -26,7 +26,8 @@
       {:styles [(aget manifest "main.css")],
        :scripts [(aget manifest "main.js")
                  (-> cljs-manifest (aget 0) (aget "js-name"))
-                 (-> cljs-manifest (aget 1) (aget "js-name"))]}))))
+                 (-> cljs-manifest (aget 1) (aget "js-name"))],
+       :ssr "respo-ssr"}))))
 
 (defn main! []
   (if (= js/process.env.env "dev")
