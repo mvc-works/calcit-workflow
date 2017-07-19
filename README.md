@@ -39,11 +39,9 @@ yarn build
 # outputs to dist/
 ```
 
-Assets would be like: http://repo.tiye.me/mvc-works/cumulo-workflow/
-
 ### Workflow
 
-Workflow https://github.com/mvc-works/cumulo-workflow
+Workflow https://github.com/Cumulo/cumulo-workflow
 
 Package jar file and install locally:
 
