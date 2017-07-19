@@ -24,7 +24,7 @@
   "author": "jiyinyiyong",
   "license": "MIT",
   "devDependencies": {
-    "coffee-script": "^1.12.6",
+    "coffee-script": "^1.12.7",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.2",
@@ -35,7 +35,7 @@
     "style-loader": "^0.18.2",
     "uglifyjs-webpack-plugin": "^0.4.4",
     "url-loader": "^0.5.9",
-    "webpack": "^3.2.0",
+    "webpack": "^3.3.0",
     "webpack-dev-server": "^2.5.1",
     "webpack-manifest-plugin": "^1.1.2"
   }
