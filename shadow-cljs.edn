@@ -3,7 +3,6 @@
  :dependencies [[mvc-works/hsl          "0.1.2"]
                 [mvc-works/shell-page   "0.1.2"]
                 [respo/ui               "0.1.9"]
-                [cirru/bisection-key    "0.1.2"]
                 [respo                  "0.5.14"]]
  :http {:host "frp.im" :port 8081}
  :open-file-command ["/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ["%s:%s:%s" :file :line :column]]
