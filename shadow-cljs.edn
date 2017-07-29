@@ -4,7 +4,7 @@
                 [mvc-works/shell-page   "0.1.2"]
                 [respo/ui               "0.1.9"]
                 [respo                  "0.5.14"]]
- :http {:host "frp.im" :port 8081}
+ :http {:host "localhost" :port 8081}
  :open-file-command ["/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ["%s:%s:%s" :file :line :column]]
  :builds {:browser {:target :browser
                     :output-dir "target/browser"
