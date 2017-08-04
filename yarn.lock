@@ -3035,9 +3035,9 @@ shadow-cljs-jar@^0.10.0:
   version "0.10.0"
   resolved "https://registry.yarnpkg.com/shadow-cljs-jar/-/shadow-cljs-jar-0.10.0.tgz#9895e6e5ccfde1c7b673737b1dfd9149194b644f"
 
-shadow-cljs@^0.18.5:
-  version "0.18.5"
-  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-0.18.5.tgz#658d86b7381526689c411fb6d15a2c0addd1d96c"
+shadow-cljs@^0.18.7:
+  version "0.18.7"
+  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-0.18.7.tgz#b4dc5a6b04a571154cbb22587932482b19b5a76b"
   dependencies:
     mkdirp "^0.5.1"
     readline-sync "^1.4.7"
@@ -3283,13 +3283,7 @@ supports-color@^3.1.1, supports-color@^3.2.3:
   dependencies:
     has-flag "^1.0.0"
 
-supports-color@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-4.0.0.tgz#33a7c680aa512c9d03ef929cacbb974d203d2790"
-  dependencies:
-    has-flag "^2.0.0"
-
-supports-color@^4.2.1:
+supports-color@^4.0.0, supports-color@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-4.2.1.tgz#65a4bb2631e90e02420dba5554c375a4754bb836"
   dependencies:
