@@ -4,7 +4,9 @@
   "description": "Stack Workflow",
   "main": "index.js",
   "scripts": {
-    "tiye": "rsync -r dist/ repo.tiye.me:repo/mvc-works/coworkflow/",
+    "cdn": "ls -1 dist | xargs -I % upx put dist/% coworkflow/%",
+    "tiye": "rsync -r dist/index.html tiye.me:repo/mvc-works/coworkflow/",
+    "upload": "yarn cdn && yarn tiye",
     "release": "shadow-cljs release browser",
     "watch": "shadow-cljs watch browser",
     "compile-ssr": "shadow-cljs compile ssr",
@@ -15,7 +17,7 @@
     "dev": "yarn compile-ssr && yarn html-dev && yarn hmr",
     "del": "rm -rf dist/*",
     "serve": "http-server dist",
-    "build": "yarn del && yarn release && yarn webpack && yarn compile-ssr && yarn html && yarn serve"
+    "build": "yarn del && yarn release && yarn webpack && yarn compile-ssr && yarn html"
   },
   "repository": {
     "type": "git",
