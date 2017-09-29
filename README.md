@@ -1,42 +1,37 @@
 
-Co Workflow
+CoWorkflow
 ----
 
-Personal project template based on Respo, Boot, ClojureScript, Cirru Sepal, shadow-cljs...
+> Personal project template based on ClojureScript, Respo, shadow-cljs, Cirru, Boot.
 
 ### Usage
 
-Compilation steps:
-
-```text
-Cirru   -> ClojureScript  -> JavaScript   -> App
-ir.edn     src/              target/         dist/
-```
-
-Dependencies:
+Make sure you have Node.js and JVM installed. Then install dependencies:
 
 ```bash
-# Node.js , JVM
-npm i -g cumulo-editor
 yarn
 ```
 
 To run in development:
 
 ```bash
-cumulo-editor
-# another tty
 yarn watch
 # another tty
 yarn dev
-# open localhost:8080
 ```
 
-To build:
+To build and preview:
 
 ```bash
-yarn build
-# outputs to dist/
+prod=preview yarn build
+yarn serve
+```
+
+Edit Clojure with [cumulo-editor](https://github.com/Cirru/cumulo-editor):
+
+```bash
+npm i -g cumulo-editor
+cumulo-editor
 ```
 
 ### Workflow
@@ -59,6 +54,13 @@ Get ClojureScript code:
 
 ```bash
 op=compile cumulo-editor
+```
+
+Release app to my CDN:
+
+```bash
+yarn build
+yarn upload
 ```
 
 ### License
