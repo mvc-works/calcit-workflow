@@ -6,7 +6,7 @@
                 [respo/ui               "0.1.9"]
                 [respo                  "0.6.2"]]
  :http {:host "localhost" :port 8081}
- :open-file-command ["/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ["%s:%s:%s" :file :line :column]]
+ :open-file-command ["subl" ["%s:%s:%s" :file :line :column]]
  :builds {:browser {:target :browser
                     :output-dir "target/browser"
                     :asset-path "/browser"
