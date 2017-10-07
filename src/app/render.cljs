@@ -16,7 +16,8 @@
    ""
    (merge
     base-info
-    {:styles [], :scripts ["/main.js" "/browser/lib.js" "/browser/main.js"]})))
+    {:styles ["http://localhost:8100/main.css"],
+     :scripts ["/main.js" "/browser/lib.js" "/browser/main.js"]})))
 
 (def previews? (= "preview" js/process.env.prod))
 
@@ -30,7 +31,8 @@
      html-content
      (merge
       base-info
-      {:styles [(prefix-cdn (aget manifest "main.css"))],
+      {:styles ["http://repo-cdn.b0.upaiyun.com/favored-fonts/main.css"
+                (prefix-cdn (aget manifest "main.css"))],
        :scripts (map
                  prefix-cdn
                  [(aget manifest "main.js")
