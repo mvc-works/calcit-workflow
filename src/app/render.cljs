@@ -23,8 +23,8 @@
 
 (defn prod-page []
   (let [html-content (make-string (comp-container schema/store))
-        manifest (.parse js/JSON (slurp "dist/assets-manifest.json"))
-        cljs-manifest (.parse js/JSON (slurp "dist/manifest.json"))
+        webpack-info (.parse js/JSON (slurp "dist/webpack-manifest.json"))
+        cljs-info (.parse js/JSON (slurp "dist/cljs-manifest.json"))
         cdn (if previews? "" "http://repo-cdn.b0.upaiyun.com/coworkflow/")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
@@ -32,12 +32,11 @@
      (merge
       base-info
       {:styles ["http://repo-cdn.b0.upaiyun.com/favored-fonts/main.css"
-                (prefix-cdn (aget manifest "main.css"))],
+                (prefix-cdn (aget webpack-info "main.css"))],
        :scripts (map
                  prefix-cdn
-                 [(aget manifest "main.js")
-                  (-> cljs-manifest (aget 0) (aget "js-name"))
-                  (-> cljs-manifest (aget 1) (aget "js-name"))]),
+                 [(-> cljs-info (aget 0) (aget "js-name"))
+                  (-> cljs-info (aget 1) (aget "js-name"))]),
        :ssr "respo-ssr"}))))
 
 (defn main! []
