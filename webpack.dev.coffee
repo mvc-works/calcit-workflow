@@ -1,3 +1,4 @@
+
 path = require 'path'
 resolve = require('path').resolve
 webpack = require 'webpack'
@@ -19,13 +20,13 @@ module.exports =
       test: /\.css$/
       loaders: ['style-loader', 'css-loader']
     ,
-      test: /\.(eot|svg|ttf|woff2?)(\?.+)?$/
+      test: /\.(eot|svg|ttf|jpg|woff2?)(\?.+)?$/
       loader: 'url-loader'
       query:
         limit: 100
         name: 'fonts/[name].[ext]'
     ]
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin()
     new webpack.NamedModulesPlugin()
   ]

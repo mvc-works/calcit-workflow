@@ -19,7 +19,7 @@ module.exports =
         fallback: 'style-loader'
         use: 'css-loader'
     ,
-      test: /\.(eot|svg|ttf|woff2?)(\?.+)?$/
+      test: /\.(eot|svg|ttf|jpg|woff2?)(\?.+)?$/
       loader: 'url-loader'
       query:
         limit: 100
@@ -30,7 +30,7 @@ module.exports =
       options: { enforce: 'pre' }
     ]
   plugins: [
-    new ExtractTextPlugin('[name].[chunkhash:8].css'),
+    new ExtractTextPlugin('[name].[chunkhash:8].css')
     new UglifyJSPlugin sourceMap: true
     new ManifestPlugin
       fileName: 'webpack-manifest.json'
