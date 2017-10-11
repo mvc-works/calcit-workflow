@@ -34,10 +34,6 @@ npm i -g cumulo-editor
 cumulo-editor
 ```
 
-### Workflow
-
-Workflow https://github.com/Cumulo/cumulo-workflow
-
 Package jar file and install locally:
 
 ```bash
@@ -62,6 +58,10 @@ Release app to my CDN:
 yarn build
 yarn upload
 ```
+
+### Workflow
+
+Workflow https://github.com/mvc-works/coworkflow
 
 ### License
 
