@@ -7,7 +7,7 @@
 
 (def base-info
   {:title "CoWorkflow",
-   :icon "http://repo-cdn.b0.upaiyun.com/logo/mvc-works.png",
+   :icon "http://cdn.tiye.me/logo/mvc-works.png",
    :ssr nil,
    :inline-html nil})
 
@@ -25,13 +25,13 @@
   (let [html-content (make-string (comp-container schema/store))
         webpack-info (.parse js/JSON (slurp "dist/webpack-manifest.json"))
         cljs-info (.parse js/JSON (slurp "dist/cljs-manifest.json"))
-        cdn (if previews? "" "http://repo-cdn.b0.upaiyun.com/coworkflow/")
+        cdn (if previews? "" "http://cdn.tiye.me/coworkflow/")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
      html-content
      (merge
       base-info
-      {:styles ["http://repo-cdn.b0.upaiyun.com/favored-fonts/main.css"
+      {:styles ["http://cdn.tiye.me/favored-fonts/main.css"
                 (prefix-cdn (aget webpack-info "main.css"))],
        :scripts (map
                  prefix-cdn

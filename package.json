@@ -4,8 +4,8 @@
   "description": "Stack Workflow",
   "main": "index.js",
   "scripts": {
-    "cdn": "ls -1 dist | xargs -I % upx put dist/% coworkflow/%",
-    "tiye": "rsync -r dist/{index.html,manifest.json} tiye.me:repo/mvc-works/coworkflow/",
+    "cdn": "rsync -avr --progress dist/* tiye.me:cdn/coworkflow",
+    "tiye": "rsync -avr --progress dist/{index.html,manifest.json} tiye.me:repo/mvc-works/coworkflow/",
     "upload": "yarn cdn && yarn tiye",
     "release": "shadow-cljs release browser",
     "watch": "shadow-cljs watch browser",
