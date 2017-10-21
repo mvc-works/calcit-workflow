@@ -3,7 +3,8 @@
   (:require [respo.render.html :refer [make-string]]
             [shell-page.core :refer [make-page spit slurp]]
             [app.comp.container :refer [comp-container]]
-            [app.schema :as schema]))
+            [app.schema :as schema]
+            [reel.schema :as reel-schema]))
 
 (def base-info
   {:title "CoWorkflow",
@@ -19,13 +20,14 @@
     {:styles ["http://localhost:8100/main.css"],
      :scripts ["/main.js" "/browser/lib.js" "/browser/main.js"]})))
 
-(def previews? (= "preview" js/process.env.prod))
+(def preview? (= "preview" js/process.env.prod))
 
 (defn prod-page []
-  (let [html-content (make-string (comp-container schema/store))
+  (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
+        html-content (make-string (comp-container reel))
         webpack-info (.parse js/JSON (slurp "dist/webpack-manifest.json"))
         cljs-info (.parse js/JSON (slurp "dist/cljs-manifest.json"))
-        cdn (if previews? "" "http://cdn.tiye.me/coworkflow/")
+        cdn (if preview? "" "http://cdn.tiye.me/coworkflow/")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
      html-content

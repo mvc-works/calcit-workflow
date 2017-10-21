@@ -1,10 +1,8 @@
 
 (ns app.main
   (:require [respo.core :refer [render! clear-cache! realize-ssr!]]
-            [respo.cursor :refer [mutate]]
             [app.comp.container :refer [comp-container]]
-            [cljs.reader :refer [read-string]]
-            [app.updater.core :refer [updater]]
+            [app.updater :refer [updater]]
             [app.schema :as schema]
             [reel.util :refer [id!]]
             [reel.core :refer [reel-updater refresh-reel listen-devtools!]]

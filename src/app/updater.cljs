@@ -1,5 +1,5 @@
 
-(ns app.updater.core (:require [respo.cursor :refer [mutate]]))
+(ns app.updater (:require [respo.cursor :refer [mutate]]))
 
 (defn updater [store op op-data]
   (case op
