@@ -2,8 +2,8 @@
 (ns app.comp.container
   (:require [hsl.core :refer [hsl]]
             [respo-ui.style :as ui]
-            [respo.macros :refer-macros [defcomp <> div button span]]
-            [verbosely.core :refer-macros [verbosely!]]
+            [respo.macros :refer [defcomp <> div button span]]
+            [verbosely.core :refer [verbosely!]]
             [respo.comp.space :refer [=<]]
             [reel.comp.reel :refer [comp-reel]]))
 
