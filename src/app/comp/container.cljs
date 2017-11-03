@@ -20,5 +20,4 @@
      {}
      (button
       {:style ui/button, :inner-text (str "inc " (:data store)), :on {:click on-click}}))
-    (<> reel nil)
     (cursor-> :reel comp-reel states reel {}))))
