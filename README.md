@@ -15,9 +15,8 @@ yarn
 To run in development:
 
 ```bash
+# yarn index.html # to regenerate target/index.html
 yarn watch
-# another tty
-yarn dev
 ```
 
 To build and preview:
@@ -32,12 +31,6 @@ Edit Clojure with [cumulo-editor](https://github.com/Cirru/cumulo-editor):
 ```bash
 npm i -g cumulo-editor
 cumulo-editor
-```
-
-Package jar file and install locally:
-
-```bash
-boot build
 ```
 
 Package jar file and send to Clojars:

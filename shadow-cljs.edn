@@ -1,7 +1,7 @@
 
 {:source-paths ["src"]
  :dependencies [[mvc-works/hsl          "0.1.2"]
-                [mvc-works/shell-page   "0.1.5"]
+                [mvc-works/shell-page   "0.1.6"]
                 [mvc-works/verbosely    "0.1.0-rc2"]
                 [respo/ui               "0.2.0"]
                 [respo/reel             "0.2.1"]
@@ -17,7 +17,9 @@
                               :lib {:entries [respo.core respo.macros
                                               respo.comp.inspect]}}
                     :devtools {:after-load app.main/reload!
-                               :preloads [shadow.cljs.devtools.client.hud]}
+                               :preloads [shadow.cljs.devtools.client.hud]
+                               :http-root "target"
+                               :http-port 8080}
                     :compiler-options {:infer-externs :auto}
                     :release {:output-dir "dist/"
                               :module-hash-names 8
