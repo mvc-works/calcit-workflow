@@ -18,6 +18,7 @@
                                               respo.comp.inspect]}}
                     :devtools {:after-load app.main/reload!
                                :preloads [shadow.cljs.devtools.client.hud]}
+                    :compiler-options {:infer-externs :auto}
                     :release {:output-dir "dist/"
                               :module-hash-names 8
                               :build-options {:manifest-name "cljs-manifest.json"}}}
