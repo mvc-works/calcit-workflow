@@ -26,7 +26,7 @@
 (defn prod-page []
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
-        cljs-info (aget (.parse js/JSON (slurp "dist/cljs-manifest.json")) 0)
+        cljs-info (.parse js/JSON (slurp "dist/cljs-manifest.json"))
         cdn (if preview? "" "http://cdn.tiye.me/coworkflow/")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
@@ -34,7 +34,10 @@
      (merge
       base-info
       {:styles ["http://cdn.tiye.me/favored-fonts/main.css"],
-       :scripts (map prefix-cdn [(aget cljs-info "js-name") (aget cljs-info "js-name")]),
+       :scripts (map
+                 prefix-cdn
+                 [(-> cljs-info (aget 0) (aget "js-name"))
+                  (-> cljs-info (aget 1) (aget "js-name"))]),
        :ssr "respo-ssr"}))))
 
 (defn main! []
