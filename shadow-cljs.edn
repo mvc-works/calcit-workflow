@@ -2,7 +2,7 @@
 {:source-paths ["src"]
  :dependencies [[mvc-works/hsl          "0.1.2"]
                 [mvc-works/shell-page   "0.1.6"]
-                [mvc-works/verbosely    "0.1.0-rc2"]
+                [mvc-works/verbosely    "0.1.1"]
                 [respo/ui               "0.2.0"]
                 [respo/reel             "0.2.2"]
                 [mvc-works/keycode      "0.1.3"]
