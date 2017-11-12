@@ -4,7 +4,7 @@
                 [mvc-works/shell-page   "0.1.6"]
                 [mvc-works/verbosely    "0.1.0-rc2"]
                 [respo/ui               "0.2.0"]
-                [respo/reel             "0.2.1"]
+                [respo/reel             "0.2.2"]
                 [mvc-works/keycode      "0.1.3"]
                 [respo/value            "0.2.3"]
                 [respo                  "0.7.1"]]
