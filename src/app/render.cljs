@@ -4,7 +4,8 @@
             [shell-page.core :refer [make-page spit slurp]]
             [app.comp.container :refer [comp-container]]
             [app.schema :as schema]
-            [reel.schema :as reel-schema]))
+            [reel.schema :as reel-schema]
+            [cljs.reader :refer [read-string]]))
 
 (def base-info
   {:title "CoWorkflow",
@@ -26,7 +27,7 @@
 (defn prod-page []
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
-        cljs-info (.parse js/JSON (slurp "dist/cljs-manifest.json"))
+        assets (read-string (slurp "dist/assets.edn"))
         cdn (if preview? "" "http://cdn.tiye.me/coworkflow/")
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
@@ -34,10 +35,7 @@
      (merge
       base-info
       {:styles ["http://cdn.tiye.me/favored-fonts/main.css"],
-       :scripts (map
-                 prefix-cdn
-                 [(-> cljs-info (aget 0) (aget "js-name"))
-                  (-> cljs-info (aget 1) (aget "js-name"))]),
+       :scripts (map #(-> % :output-name prefix-cdn) assets),
        :ssr "respo-ssr"}))))
 
 (defn main! []
