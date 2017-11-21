@@ -17,7 +17,9 @@
 
 (def mount-target (.querySelector js/document ".app"))
 
-(defn render-app! [renderer] (renderer mount-target (comp-container @*reel) dispatch!))
+(defn dispatch$ [op op-data] (dispatch! op op-data))
+
+(defn render-app! [renderer] (renderer mount-target (comp-container @*reel) dispatch$))
 
 (def ssr? (some? (js/document.querySelector "meta.respo-ssr")))
 
