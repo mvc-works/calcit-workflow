@@ -4,5 +4,5 @@
 (defn updater [store op op-data]
   (case op
     :states (update store :states (mutate op-data))
-    :inc (update store :data (fn [x] (+ x 1)))
+    :content (assoc store :content op-data)
     store))
