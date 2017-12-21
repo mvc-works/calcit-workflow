@@ -5,6 +5,5 @@
             [clojure.java.shell :refer [sh]]))
 
 (defn -main []
-  (server/start!)
-  (api/watch :browser))
-
+  (api/watch :browser)
+  (api/repl :browser))
