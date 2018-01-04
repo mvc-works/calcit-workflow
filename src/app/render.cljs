@@ -19,8 +19,7 @@
    ""
    (merge
     base-info
-    {:styles ["http://localhost:8100/main.css"],
-     :scripts ["/browser/lib.js" "/browser/main.js"]})))
+    {:styles ["http://localhost:8100/main-2.css"], :scripts ["/lib.js" "/main.js"]})))
 
 (def preview? (= "preview" js/process.env.prod))
 
@@ -34,7 +33,7 @@
      html-content
      (merge
       base-info
-      {:styles ["http://cdn.tiye.me/favored-fonts/main.css"],
+      {:styles ["http://cdn.tiye.me/favored-fonts/main-2.css"],
        :scripts (map #(-> % :output-name prefix-cdn) assets),
        :ssr "respo-ssr"}))))
 
