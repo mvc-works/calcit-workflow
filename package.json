@@ -1,7 +1,7 @@
 {
   "name": "coworkflow",
   "version": "0.1.0",
-  "description": "Cumulo Workflow",
+  "description": "CoWorkflow",
   "main": "index.js",
   "scripts": {
     "cdn": "rsync -avr --progress dist/* tiye.me:cdn/coworkflow",
@@ -26,6 +26,6 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.10.0",
-    "shadow-cljs": "^2.0.128"
+    "shadow-cljs": "^2.0.129"
   }
 }
