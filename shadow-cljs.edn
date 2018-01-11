@@ -6,8 +6,8 @@
                 [respo/ui               "0.2.4"]
                 [respo/reel             "0.2.2"]
                 [mvc-works/keycode      "0.1.3"]
-                [respo/value            "0.2.3"]
-                [respo                  "0.8.5"]]
+                [respo/value            "0.2.4"]
+                [respo                  "0.8.7"]]
  :open-file-command ["subl" ["%s:%s:%s" :file :line :column]]
  :builds {:browser {:target :browser
                     :output-dir "target/"
