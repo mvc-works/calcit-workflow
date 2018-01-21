@@ -26,11 +26,11 @@ prod=preview yarn build
 yarn serve
 ```
 
-Edit Clojure with [cumulo-editor](https://github.com/Cirru/cumulo-editor):
+Edit Clojure with [calcit-editor](https://github.com/Cirru/calcit-editor):
 
 ```bash
-npm i -g cumulo-editor
-cumulo-editor
+npm i -g calcit-editor
+calcit-editor
 ```
 
 Package jar file and send to Clojars:
@@ -42,7 +42,7 @@ boot deploy
 Get ClojureScript code:
 
 ```bash
-op=compile cumulo-editor
+op=compile calcit-editor
 ```
 
 Release app to my CDN:
