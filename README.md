@@ -1,5 +1,5 @@
 
-CoWorkflow
+Calcit Workflow
 ----
 
 > Personal project template based on ClojureScript, Respo, shadow-cljs, Cirru, Boot.
@@ -54,7 +54,7 @@ yarn upload
 
 ### Workflow
 
-Workflow https://github.com/mvc-works/coworkflow
+Workflow https://github.com/mvc-works/calcit-workflow
 
 ### License
 

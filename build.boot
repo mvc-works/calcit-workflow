@@ -13,11 +13,11 @@
 
 (deftask deploy []
   (comp
-    (pom :project     'mvc-works/coworkflow
+    (pom :project     'mvc-works/calcit-workflow
          :version     +version+
          :description "Workflow"
-         :url         "https://github.com/mvc-works/coworkflow"
-         :scm         {:url "https://github.com/mvc-works/coworkflow"}
+         :url         "https://github.com/mvc-works/calcit-workflow"
+         :scm         {:url "https://github.com/mvc-works/calcit-workflow"}
          :license     {"MIT" "http://opensource.org/licenses/mit-license.php"})
     (jar)
     (push :repo "clojars" :gpg-sign false)))

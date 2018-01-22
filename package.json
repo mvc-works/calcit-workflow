@@ -1,11 +1,11 @@
 {
-  "name": "coworkflow",
+  "name": "calcit-workflow",
   "version": "0.1.0",
-  "description": "CoWorkflow",
+  "description": "ClojureScript workflow using Calcit Editor",
   "main": "index.js",
   "scripts": {
-    "cdn": "rsync -avr --progress dist/* tiye.me:cdn/coworkflow",
-    "tiye": "rsync -avr --progress dist/{index.html,manifest.json} tiye.me:repo/mvc-works/coworkflow/",
+    "cdn": "rsync -avr --progress dist/* tiye.me:cdn/calcit-workflow",
+    "tiye": "rsync -avr --progress dist/{index.html,manifest.json} tiye.me:repo/mvc-works/calcit-workflow/",
     "upload": "yarn cdn && yarn tiye",
     "release": "shadow-cljs release browser",
     "watch": "shadow-cljs watch browser",
@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:mvc-works/coworkflow.git"
+    "url": "git@github.com:mvc-works/calcit-workflow.git"
   },
   "author": "jiyinyiyong",
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.11.1",
-    "shadow-cljs": "^2.0.138"
+    "shadow-cljs": "^2.0.139"
   }
 }
