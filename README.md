@@ -2,7 +2,7 @@
 Calcit Workflow
 ----
 
-> Personal project template based on ClojureScript, Respo, shadow-cljs, Cirru, Boot.
+> Personal project template based on ClojureScript, Respo, shadow-cljs, Cirru.
 
 ### Usage
 
