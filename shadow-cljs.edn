@@ -7,7 +7,7 @@
                 [respo                  "0.8.15"]
                 [respo/ui               "0.3.2"]
                 [respo/value            "0.2.4"]
-                [respo/reel             "0.2.4"]]
+                [respo/reel             "0.3.1"]]
  :open-file-command ["subl" ["%s:%s:%s" :file :line :column]]
  :builds {:browser {:target :browser
                     :output-dir "target/"
