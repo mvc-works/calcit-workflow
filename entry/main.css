@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  font-display: optional;
 }
 
 body * {
