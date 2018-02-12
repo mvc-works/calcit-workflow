@@ -1,12 +1,14 @@
 
 (ns build.release
   (:require [shadow.cljs.devtools.api :as api]
-            [shadow.cljs.devtools.server :as server]
             [clojure.java.shell :refer [sh]]))
 
+(defn sh! [command]
+  (println (sh "bash" "-c" command)))
+
 (defn -main []
-  (println (sh "rm" "-rf" "dist/*"))
+  (sh! "rm -rf dist/*")
   (api/release :browser)
   (api/compile :ssr)
-  (println (sh "node" "target/ssr.js"))
-  (println (sh "cp" "entry/manifest.json" "dist/")))
+  (sh! "node target/ssr.js")
+  (sh! "cp entry/manifest.json dist/"))
