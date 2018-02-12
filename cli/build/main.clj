@@ -7,6 +7,7 @@
               :name "calcit-workflow"})
 
 (defn sh! [command]
+  (println command)
   (println (sh "bash" "-c" command)))
 
 (defn watch []
