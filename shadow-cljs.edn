@@ -1,5 +1,5 @@
 
-{:source-paths ["src"]
+{:source-paths ["src" "cli"]
  :dependencies [[mvc-works/hsl          "0.1.2"]
                 [mvc-works/verbosely    "0.1.2"]
                 [mvc-works/keycode      "0.1.3"]
