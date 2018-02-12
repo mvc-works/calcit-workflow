@@ -9,6 +9,9 @@
 (defn sh! [command]
   (println (sh "bash" "-c" command)))
 
+(defn watch []
+  (shadow/watch :browser))
+
 (defn build []
   (sh! "rm -rf dist/*")
   (shadow/release :browser)
@@ -16,7 +19,14 @@
   (sh! "node target/ssr.js")
   (sh! "cp entry/manifest.json dist/"))
 
-(defn gen-html []
+(defn build-local []
+  (sh! "rm -rf dist/*")
+  (shadow/release :browser)
+  (shadow/compile :ssr)
+  (sh! "prod=preview node target/ssr.js")
+  (sh! "cp entry/manifest.json dist/"))
+
+(defn html []
   (shadow/compile :ssr)
   (sh! "env=dev node target/ssr.js")
   (sh! "cp entry/manifest.json target/"))

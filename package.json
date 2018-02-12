@@ -6,9 +6,7 @@
   "scripts": {
     "watch": "shadow-cljs watch browser",
     "serve": "http-server dist -s",
-    "upload": "shadow-cljs clj-run build.main/upload",
-    "html": "shadow-cljs clj-run build.main/gen-html",
-    "build": "shadow-cljs clj-run build.main/build"
+    "repl": "rlwrap shadow-cljs clj-repl"
   },
   "repository": {
     "type": "git",

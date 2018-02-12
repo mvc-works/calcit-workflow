@@ -10,46 +10,35 @@ Make sure you have Node.js and JVM installed. Then install dependencies:
 
 ```bash
 yarn
+
+yarn repl # to start shadow-cljs Clojure REPL
 ```
 
-To run in development:
+All build script are running in
 
-```bash
-# yarn index.html # to regenerate target/index.html
-yarn watch
-```
+```clojure
+(require '[build.main :as b])
 
-To build and preview:
-
-```bash
-prod=preview yarn build
-yarn serve
+(b/watch) ; to start watch server
+(b/html) ; to generate target/index.html file
+(b/build-local) ; to build release bundles, with local assets links
+(b/build) ; to build release bundles, with assets link to CDN
+(b/upload) ; to upload assets to my server
 ```
 
 Edit Clojure with [calcit-editor](https://github.com/Cirru/calcit-editor):
 
 ```bash
 npm i -g calcit-editor
-calcit-editor
+calcit-editor # watching server...
+
+op=compile calcit-editor # generate code.
 ```
 
 Package jar file and send to Clojars:
 
 ```bash
 boot deploy
-```
-
-Get ClojureScript code:
-
-```bash
-op=compile calcit-editor
-```
-
-Release app to my CDN:
-
-```bash
-yarn build
-yarn upload
 ```
 
 ### Workflow
