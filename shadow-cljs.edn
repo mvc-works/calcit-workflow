@@ -9,7 +9,7 @@
                 [respo/value            "0.2.4"]
                 [respo/reel             "0.3.1"]]
  :open-file-command ["subl" ["%s:%s:%s" :file :line :column]]
- :socket-repl {:port 5900}
+ :socket-repl {:port 0}
  :builds {:browser {:target :browser
                     :output-dir "target/"
                     :asset-path "./"

@@ -4,7 +4,8 @@
             [clojure.java.shell :refer [sh]]))
 
 (def configs {:orgization "mvc-works"
-              :name "calcit-workflow"})
+              :name "calcit-workflow"
+              :cdn "calcit-workflow"})
 
 (defn sh! [command]
   (println command)
