@@ -13,10 +13,7 @@
  :builds {:browser {:target :browser
                     :output-dir "target/"
                     :asset-path "./"
-                    :modules {:main {:entries [app.main]
-                                     :depends-on #{:lib}}
-                              :lib {:entries [respo.core respo.macros
-                                              respo.comp.inspect]}}
+                    :modules {:main {:entries [app.main]}}
                     :devtools {:after-load app.main/reload!
                                :preloads [shadow.cljs.devtools.client.hud]
                                :http-root "target"

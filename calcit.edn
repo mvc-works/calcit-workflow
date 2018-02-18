@@ -1091,7 +1091,6 @@
                 :type :expr, :time 1499755354983, :id "H1l8go_FqTHZ"
                 :data {
                  "T" {:type :leaf, :author "root", :time 1499755354983, :text "[]", :id "SJ-Lgj_t5aS-"}
-                 "r" {:type :leaf, :author "root", :time 1499755354983, :text "|/lib.js", :id "BJ7Ils_Y5arb", :at 1515039511181, :by "root"}
                  "v" {:type :leaf, :author "root", :time 1499755354983, :text "|/main.js", :id "HJNUxo_tcpSb", :at 1515039513665, :by "root"}
                 }
                }
