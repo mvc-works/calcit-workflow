@@ -1587,6 +1587,8 @@
          "T" {:type :leaf, :author "root", :time 1499755354983, :text "store", :id "r1YyxidF96rW"}
          "j" {:type :leaf, :author "root", :time 1499755354983, :text "op", :id "r1cJxouK5aSZ"}
          "r" {:type :leaf, :author "root", :time 1499755354983, :text "op-data", :id "Bkj1ljdY5Tr-"}
+         "v" {:type :leaf, :by "root", :at 1519489491135, :text "op-id", :id "S1gUCbfy_G"}
+         "x" {:type :leaf, :by "root", :at 1519489492110, :text "op-time", :id "ryzsAWMkdG"}
         }
        }
        "v" {
