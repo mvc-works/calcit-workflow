@@ -7,7 +7,8 @@
              [defcomp cursor-> action-> mutation-> <> div button textarea span]]
             [verbosely.core :refer [verbosely!]]
             [respo.comp.space :refer [=<]]
-            [reel.comp.reel :refer [comp-reel]]))
+            [reel.comp.reel :refer [comp-reel]]
+            [respo-md.comp.md :refer [comp-md]]))
 
 (defcomp
  comp-container
@@ -23,6 +24,8 @@
     (=< "8px" nil)
     (div
      {}
+     (comp-md "This is some content with `code`")
+     (=< "8px" nil)
      (button
       {:style ui/button,
        :inner-text (str "run"),
