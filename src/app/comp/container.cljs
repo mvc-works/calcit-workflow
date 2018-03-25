@@ -8,7 +8,8 @@
             [verbosely.core :refer [verbosely!]]
             [respo.comp.space :refer [=<]]
             [reel.comp.reel :refer [comp-reel]]
-            [respo-md.comp.md :refer [comp-md]]))
+            [respo-md.comp.md :refer [comp-md]]
+            [app.schema :refer [dev?]]))
 
 (defcomp
  comp-container
@@ -30,4 +31,4 @@
       {:style ui/button,
        :inner-text (str "run"),
        :on-click (fn [e d! m!] (println (:content store)))}))
-    (cursor-> :reel comp-reel states reel {}))))
+    (when dev? (cursor-> :reel comp-reel states reel {})))))
