@@ -41,6 +41,14 @@ Package jar file and send to Clojars:
 boot deploy
 ```
 
+### CSS editing
+
+During development make use of Chrome workspace and map files via:
+
+```bash
+ln -s entry target/entry
+```
+
 ### Workflow
 
 Workflow https://github.com/mvc-works/calcit-workflow
