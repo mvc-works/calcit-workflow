@@ -46,7 +46,7 @@ boot deploy
 During development make use of Chrome workspace and map files via:
 
 ```bash
-ln -s entry target/entry
+ln -s ../entry target/
 ```
 
 ### Workflow
