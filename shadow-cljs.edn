@@ -11,18 +11,18 @@
                 [respo/reel             "0.3.2"]]
  :open-file-command ["subl" ["%s:%s:%s" :file :line :column]]
  :socket-repl {:port 0}
- :builds {:browser {:target :browser
-                    :output-dir "target/"
-                    :asset-path "./"
-                    :modules {:main {:entries [app.main]}}
-                    :devtools {:after-load app.main/reload!
-                               :http-root "target"
-                               :http-port 7000}
-                    :compiler-options {:infer-externs :auto}
-                    :release {:output-dir "dist/"
-                              :module-hash-names 8
-                              :build-options {:manifest-name "assets.edn"}}}
-          :ssr {:target :node-script
-                :output-to "target/ssr.js"
-                :main app.render/main!
-                :devtools {:after-load app.render/main!}}}}
+ :builds {:client {:target :browser
+                   :output-dir "target/"
+                   :asset-path "./"
+                   :modules {:main {:entries [app.main]}}
+                   :devtools {:after-load app.main/reload!
+                              :http-root "target"
+                              :http-port 7000}
+                   :compiler-options {:infer-externs :auto}
+                   :release {:output-dir "dist/"
+                             :module-hash-names 8
+                             :build-options {:manifest-name "assets.edn"}}}
+          :page {:target :node-script
+                 :output-to "target/page.js"
+                 :main app.page/main!
+                 :devtools {:after-load app.page/main!}}}}

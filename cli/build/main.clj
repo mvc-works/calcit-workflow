@@ -8,23 +8,23 @@
   (println (sh "bash" "-c" command)))
 
 (defn watch []
-  (shadow/watch :browser))
+  (shadow/watch :client))
 
 (defn build []
   (sh! "rm -rf dist/*")
-  (shadow/release :browser)
-  (shadow/compile :ssr)
-  (sh! "node target/ssr.js")
+  (shadow/release :client)
+  (shadow/compile :page)
+  (sh! "node target/page.js")
   (sh! "cp entry/manifest.json dist/"))
 
 (defn build-local []
   (sh! "rm -rf dist/*")
-  (shadow/release :browser)
-  (shadow/compile :ssr)
-  (sh! "prod=preview node target/ssr.js")
+  (shadow/release :client)
+  (shadow/compile :page)
+  (sh! "prod=preview node target/page.js")
   (sh! "cp entry/manifest.json dist/"))
 
-(defn html []
-  (shadow/compile :ssr)
-  (sh! "env=dev node target/ssr.js")
+(defn page []
+  (shadow/compile :page)
+  (sh! "env=dev node target/page.js")
   (sh! "cp entry/manifest.json target/"))

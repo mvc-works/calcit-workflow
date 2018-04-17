@@ -1,5 +1,5 @@
 
-(ns app.render
+(ns app.page
   (:require [respo.render.html :refer [make-string]]
             [shell-page.core :refer [make-page spit slurp]]
             [app.comp.container :refer [comp-container]]
