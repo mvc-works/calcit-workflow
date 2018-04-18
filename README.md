@@ -6,7 +6,7 @@ Calcit Workflow
 
 ### Usage
 
-Make sure you have Node.js and JVM installed. Then install dependencies:
+Make sure you have Node.js, JVM and Lumo installed. Then install dependencies:
 
 ```bash
 yarn
