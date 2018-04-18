@@ -10,20 +10,16 @@ Make sure you have Node.js and JVM installed. Then install dependencies:
 
 ```bash
 yarn
+``
 
-yarn repl # to start shadow-cljs Clojure REPL
-```
+All build script are running in:
 
-All build script are running in
-
-```clojure
-(require '[build.main :as b])
-
-(b/watch) ; to start watch server
-(b/html) ; to generate target/index.html file
-(b/build-local) ; to build release bundles, with local assets links
-(b/build) ; to build release bundles, with assets link to CDN
-(b/upload) ; to upload assets to my server
+```bash
+yarn watch # to start watch server...
+yarn page # to generate target/index.html file
+yarn build-local # to build release bundles, with local assets links
+yarn build # to build release bundles, with assets link to CDN
+yarn upload # to upload assets to my server
 ```
 
 Edit Clojure with [calcit-editor](https://github.com/Cirru/calcit-editor):
@@ -46,7 +42,7 @@ boot deploy
 During development make use of Chrome workspace and map files via:
 
 ```bash
-ln -s ../entry target/
+cd target/ && ln -s ../entry
 ```
 
 ### Workflow
