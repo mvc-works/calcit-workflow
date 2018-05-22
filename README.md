@@ -10,7 +10,7 @@ Make sure you have Node.js, JVM and Lumo installed. Then install dependencies:
 
 ```bash
 yarn
-``
+```
 
 All build script are running in:
 
