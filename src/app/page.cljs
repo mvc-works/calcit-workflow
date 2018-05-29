@@ -15,7 +15,7 @@
    ""
    (merge
     base-info
-    {:styles ["/entry/main.css" "http://localhost:8100/main.css"],
+    {:styles ["/entry/main.css" (:dev-ui schema/config)],
      :scripts ["/main.js"],
      :inline-styles []})))
 
@@ -25,13 +25,13 @@
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
         assets (read-string (slurp "dist/assets.edn"))
-        cdn (if preview? "" "http://cdn.tiye.me/calcit-workflow/")
+        cdn (if preview? "" (:cdn schema/config))
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
      html-content
      (merge
       base-info
-      {:styles ["http://cdn.tiye.me/favored-fonts/main.css"],
+      {:styles [(:release-ui schema/config)],
        :scripts (map #(-> % :output-name prefix-cdn) assets),
        :ssr "respo-ssr",
        :inline-styles [(slurp "./entry/main.css")]}))))
