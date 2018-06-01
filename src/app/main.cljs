@@ -7,7 +7,8 @@
             [reel.util :refer [listen-devtools!]]
             [reel.core :refer [reel-updater refresh-reel]]
             [reel.schema :as reel-schema]
-            [cljs.reader :refer [read-string]]))
+            [cljs.reader :refer [read-string]]
+            [app.config :as config]))
 
 (defonce *reel
   (atom (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))))
@@ -31,8 +32,8 @@
   (.addEventListener
    js/window
    "beforeunload"
-   (fn [] (.setItem js/localStorage (:storage schema/config) (pr-str (:store @*reel)))))
-  (let [raw (.getItem js/localStorage (:storage schema/config))]
+   (fn [] (.setItem js/localStorage (:storage config/site) (pr-str (:store @*reel)))))
+  (let [raw (.getItem js/localStorage (:storage config/site))]
     (if (some? raw) (do (dispatch! :hydrate-storage (read-string raw)))))
   (println "App started."))
 
