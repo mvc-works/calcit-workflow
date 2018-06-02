@@ -9,7 +9,7 @@
             [app.config :as config]))
 
 (def base-info
-  {:title "Calcit", :icon "http://cdn.tiye.me/logo/mvc-works.png", :ssr nil, :inline-html nil})
+  {:title (:title config/site), :icon (:icon config/site), :ssr nil, :inline-html nil})
 
 (defn dev-page []
   (make-page
@@ -26,7 +26,7 @@
   (let [reel (-> reel-schema/reel (assoc :base schema/store) (assoc :store schema/store))
         html-content (make-string (comp-container reel))
         assets (read-string (slurp "dist/assets.edn"))
-        cdn (if preview? "" (:cdn config/site))
+        cdn (if preview? "" (str "http://cdn.tiye.me/" (:cdn-path config/site) "/"))
         prefix-cdn (fn [x] (str cdn x))]
     (make-page
      html-content

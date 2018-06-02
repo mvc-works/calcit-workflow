@@ -10,7 +10,7 @@
     "build": "shadow-cljs clj-run build.main/build",
     "build-local": "shadow-cljs clj-run build.main/build-local",
     "page": "shadow-cljs clj-run build.main/page",
-    "upload": "lumo -c cli -m build.upload"
+    "upload": "lumo -c cli/:src/ -m build.upload"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.11.1",
-    "shadow-cljs": "^2.3.30"
+    "shadow-cljs": "^2.3.32"
   },
   "dependencies": {
     "shortid": "^2.2.8"
