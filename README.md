@@ -18,6 +18,11 @@ All build script are running in:
 yarn watch # to start watch server...
 yarn page # to generate target/index.html file
 yarn build-local # to build release bundles, with local assets links
+```
+
+Edit `config.cljs` to change the settings as you want(by default it sends assets to my server). To release:
+
+```bash
 yarn build # to build release bundles, with assets link to CDN
 yarn upload # to upload assets to my server
 ```

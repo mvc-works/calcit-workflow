@@ -8,6 +8,6 @@
   (println (.toString (child-process/execSync command))))
 
 (defn -main []
-  (sh! (str "rsync -avr --progress dist/* tiye.me:cdn/" (:cdn-path config/site)))
-  (sh! (str "rsync -avr --progress dist/{index.html,manifest.json} tiye.me:repo/"
-            (:upload-path config/site) "/")))
+  (sh! (str "rsync -avr --progress dist/* " (:cdn-folder config/site)))
+  (sh! (str "rsync -avr --progress dist/{index.html,manifest.json} "
+            (:upload-folder config/site))))
