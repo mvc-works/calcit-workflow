@@ -12,7 +12,7 @@
   :resource-paths #{"src"}
   :dependencies '[]
   :repositories #(conj % ["clojars" {:url "https://clojars.org/repo/"
-                                     :username (:clojsrs-user config)
+                                     :username (:clojars-user config)
                                      :password (read-password "Clojars password: ")}]))
 
 (deftask deploy []
