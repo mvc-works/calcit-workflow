@@ -1,10 +1,10 @@
 
-(ns app.config )
+(ns app.config (:require [app.util :refer [get-env!]]))
 
 (def dev?
   (if (exists? js/window)
     (do ^boolean js/goog.DEBUG)
-    (= "preview" (-> js/process .-env .-env))))
+    (not (contains? #{"release" "local-release"} (get-env! "mode")))))
 
 (def site
   {:storage "workflow",
