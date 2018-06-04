@@ -1,10 +1,12 @@
 
 (ns app.config (:require [app.util :refer [get-env!]]))
 
+(def bundle-builds #{"release" "local-bundle"})
+
 (def dev?
   (if (exists? js/window)
     (do ^boolean js/goog.DEBUG)
-    (not (contains? #{"release" "local-release"} (get-env! "mode")))))
+    (not (contains? bundle-builds (get-env! "mode")))))
 
 (def site
   {:storage "workflow",
