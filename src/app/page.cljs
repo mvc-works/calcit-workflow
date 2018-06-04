@@ -39,6 +39,6 @@
        :inline-styles [(slurp "./entry/main.css")]}))))
 
 (defn main! []
-  (if (contains? bundle-builds (get-env! "mode"))
+  (if (contains? config/bundle-builds (get-env! "mode"))
     (spit "dist/index.html" (prod-page))
     (spit "target/index.html" (dev-page))))
