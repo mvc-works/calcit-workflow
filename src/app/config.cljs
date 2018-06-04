@@ -1,7 +1,10 @@
 
 (ns app.config )
 
-(def dev? (do ^boolean js/goog.DEBUG))
+(def dev?
+  (if (exists? js/window)
+    (do ^boolean js/goog.DEBUG)
+    (= "preview" (-> js/process .-env .-env))))
 
 (def site
   {:storage "workflow",
