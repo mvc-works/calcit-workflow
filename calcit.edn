@@ -1407,7 +1407,7 @@
           :type :expr, :by "root", :at 1528097007570, :id "HyOlYvfem"
           :data {
            "L" {:type :leaf, :by "root", :at 1528097255158, :text "contains?", :id "Sk0J9vzgX"}
-           "b" {:type :leaf, :by "root", :at 1528097514202, :text "bundle-builds", :id "H1xzeoDzgQ"}
+           "b" {:type :leaf, :by "root", :at 1528130738394, :text "config/bundle-builds", :id "H1xzeoDzgQ"}
            "r" {
             :type :expr, :by "root", :at 1528097011453, :id "HkzoxtDMgm"
             :data {
