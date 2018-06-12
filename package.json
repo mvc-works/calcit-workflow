@@ -10,7 +10,8 @@
     "build": "shadow-cljs clj-run build.main/build",
     "build-local": "shadow-cljs clj-run build.main/build-local",
     "page": "shadow-cljs clj-run build.main/page",
-    "upload": "lumo -c cli/:src/ -m build.upload"
+    "upload": "lumo -c cli/:src/ -m build.upload",
+    "ln": "cd target && rm -f entry && ln -s ../entry"
   },
   "repository": {
     "type": "git",
