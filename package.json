@@ -21,7 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.11.1",
-    "shadow-cljs": "^2.4.14"
+    "shadow-cljs": "^2.4.16"
   },
   "dependencies": {
     "shortid": "^2.2.8"
