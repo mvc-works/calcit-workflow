@@ -18,7 +18,7 @@
    (merge
     base-info
     {:styles ["/entry/main.css" (:dev-ui config/site)],
-     :scripts ["/main.js"],
+     :scripts ["/client.js"],
      :inline-styles []})))
 
 (def local-bundle? (= "local-bundle" (get-env! "mode")))
