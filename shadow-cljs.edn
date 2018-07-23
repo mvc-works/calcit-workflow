@@ -17,7 +17,8 @@
                    :modules {:client {:entries [app.main]}}
                    :devtools {:after-load app.main/reload!
                               :http-root "target"
-                              :http-port 7000}
+                              :http-port 7000
+                              :loader-mode :eval}
                    :compiler-options {:infer-externs :auto}
                    :release {:output-dir "dist/"
                              :module-hash-names 8
