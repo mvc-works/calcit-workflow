@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-display: optional;
+  overscroll-behavior-y: none;
 }
 
 body * {
