@@ -19,6 +19,9 @@
 
 (def mount-target (.querySelector js/document ".app"))
 
+(defn persist-storage! []
+  (.setItem js/localStorage (:storage config/site) (pr-str (:store @*reel))))
+
 (defn render-app! [renderer]
   (renderer mount-target (comp-container @*reel) #(dispatch! %1 %2)))
 
@@ -29,12 +32,10 @@
   (render-app! render!)
   (add-watch *reel :changes (fn [] (render-app! render!)))
   (listen-devtools! "a" dispatch!)
-  (.addEventListener
-   js/window
-   "beforeunload"
-   (fn [] (.setItem js/localStorage (:storage config/site) (pr-str (:store @*reel)))))
+  (.addEventListener js/window "beforeunload" persist-storage!)
+  (js/setInterval persist-storage! (* 1000 60))
   (let [raw (.getItem js/localStorage (:storage config/site))]
-    (if (some? raw) (do (dispatch! :hydrate-storage (read-string raw)))))
+    (when (some? raw) (dispatch! :hydrate-storage (read-string raw))))
   (println "App started."))
 
 (defn reload! []
