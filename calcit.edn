@@ -59,21 +59,6 @@
           }
          }
         }
-        "w" {
-         :type :expr, :author "root", :time 1505409896139, :id "HJZi6qjTp-"
-         :data {
-          "T" {:type :leaf, :author "root", :time 1505409897210, :text "[]", :id "S1ee_s4Oc-leaf"}
-          "j" {:type :leaf, :author "root", :time 1505409899596, :text "verbosely.core", :id "BJMujEu9Z"}
-          "r" {:type :leaf, :author "root", :time 1508946166387, :text ":refer", :id "BkbNdjV_q-"}
-          "v" {
-           :type :expr, :author "root", :time 1505409900510, :id "SkYV_iVOqW"
-           :data {
-            "T" {:type :leaf, :author "root", :time 1505409900971, :text "[]", :id "SkdEOsEOc-"}
-            "j" {:type :leaf, :author "root", :time 1505409901458, :text "verbosely!", :id "Hk-BujE_9W"}
-           }
-          }
-         }
-        }
         "x" {
          :type :expr, :time 1499755354983, :id "Sy4-oOt96SZ"
          :data {
