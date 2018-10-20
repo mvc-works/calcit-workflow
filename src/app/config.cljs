@@ -12,7 +12,7 @@
 
 (def site
   {:storage "workflow",
-   :dev-ui (let [ip (get-ip!)] (<< "http://~{ip}:8080/main.js")),
+   :dev-ui (<< "http://~{(get-ip!)}:8080/main.js"),
    :release-ui "http://cdn.tiye.me/favored-fonts/main.css",
    :cdn-url "http://cdn.tiye.me/calcit-workflow/",
    :cdn-folder "tiye.me:cdn/calcit-workflow",

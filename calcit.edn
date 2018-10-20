@@ -565,33 +565,10 @@
           :data {
            "T" {:type :leaf, :by "root", :at 1527526864597, :text ":dev-ui", :id "HkeSAB3K1Xleaf"}
            "x" {
-            :type :expr, :by "root", :at 1540032267273, :id "GNU6ZH0fav"
+            :type :expr, :by "root", :at 1540032489730, :id "g6Eroa8Jug"
             :data {
-             "T" {:type :leaf, :by "root", :at 1540032267715, :text "let", :id "GNU6ZH0favleaf"}
-             "j" {
-              :type :expr, :by "root", :at 1540032268009, :id "FjHzUSMa0D"
-              :data {
-               "T" {
-                :type :expr, :by "root", :at 1540032268271, :id "2blz8hJGRF"
-                :data {
-                 "T" {:type :leaf, :by "root", :at 1540032268529, :text "ip", :id "lsZAXhLw5s"}
-                 "j" {
-                  :type :expr, :by "root", :at 1540032272100, :id "Z0P3yDz7bA"
-                  :data {
-                   "T" {:type :leaf, :by "root", :at 1540032272100, :text "get-ip!", :id "r5UaJpHuLo"}
-                  }
-                 }
-                }
-               }
-              }
-             }
-             "r" {
-              :type :expr, :by "root", :at 1540032275887, :id "k8eurwDYs_"
-              :data {
-               "T" {:type :leaf, :by "root", :at 1540032275887, :text "<<", :id "awrVW3gsEG"}
-               "j" {:type :leaf, :by "root", :at 1540032332752, :text "\"http://~{ip}:8080/main.js", :id "TyLBua8E1I"}
-              }
-             }
+             "T" {:type :leaf, :by "root", :at 1540032489730, :text "<<", :id "adkafKqa8h"}
+             "j" {:type :leaf, :by "root", :at 1540032489730, :text "\"http://~{(get-ip!)}:8080/main.js", :id "GHE5A-5h_P"}
             }
            }
           }
