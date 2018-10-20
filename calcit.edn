@@ -457,6 +457,27 @@
         }
        }
       }
+      "v" {
+       :type :expr, :by "root", :at 1540032225402, :id "YnhbvpMpAQ"
+       :data {
+        "T" {:type :leaf, :by "root", :at 1540032228242, :text ":require-macros", :id "YnhbvpMpAQleaf"}
+        "j" {
+         :type :expr, :by "root", :at 1540032232794, :id "F97NRW5YBz"
+         :data {
+          "T" {:type :leaf, :by "root", :at 1540032232794, :text "[]", :id "3eCr9GI805"}
+          "j" {:type :leaf, :by "root", :at 1540032232794, :text "clojure.core.strint", :id "rCClSGuJwI"}
+          "r" {:type :leaf, :by "root", :at 1540032232794, :text ":refer", :id "ueh5_q4eiN"}
+          "v" {
+           :type :expr, :by "root", :at 1540032232794, :id "KFStlCFUr5"
+           :data {
+            "T" {:type :leaf, :by "root", :at 1540032232794, :text "[]", :id "ycU_rYBTd7"}
+            "j" {:type :leaf, :by "root", :at 1540032232794, :text "<<", :id "fM86cTk8c4"}
+           }
+          }
+         }
+        }
+       }
+      }
      }
     }
     :defs {
@@ -543,18 +564,34 @@
           :type :expr, :by "root", :at 1527526861413, :id "HkeSAB3K1X"
           :data {
            "T" {:type :leaf, :by "root", :at 1527526864597, :text ":dev-ui", :id "HkeSAB3K1Xleaf"}
-           "r" {
-            :type :expr, :by "root", :at 1540031784258, :id "ZEVIq1YVwO"
+           "x" {
+            :type :expr, :by "root", :at 1540032267273, :id "GNU6ZH0fav"
             :data {
-             "T" {:type :leaf, :by "root", :at 1540031785124, :text "str", :id "AYYkTMNM2"}
-             "j" {:type :leaf, :by "root", :at 1540031789299, :text "\"http://", :id "39948L5Hbr"}
-             "n" {
-              :type :expr, :by "root", :at 1540031795504, :id "_bR-68o2nq"
+             "T" {:type :leaf, :by "root", :at 1540032267715, :text "let", :id "GNU6ZH0favleaf"}
+             "j" {
+              :type :expr, :by "root", :at 1540032268009, :id "FjHzUSMa0D"
               :data {
-               "T" {:type :leaf, :by "root", :at 1540031801398, :text "get-ip!", :id "LO3SvSjeeQ"}
+               "T" {
+                :type :expr, :by "root", :at 1540032268271, :id "2blz8hJGRF"
+                :data {
+                 "T" {:type :leaf, :by "root", :at 1540032268529, :text "ip", :id "lsZAXhLw5s"}
+                 "j" {
+                  :type :expr, :by "root", :at 1540032272100, :id "Z0P3yDz7bA"
+                  :data {
+                   "T" {:type :leaf, :by "root", :at 1540032272100, :text "get-ip!", :id "r5UaJpHuLo"}
+                  }
+                 }
+                }
+               }
               }
              }
-             "r" {:type :leaf, :by "root", :at 1540031794780, :text "\":8080/main.js", :id "uiw4uPLlu"}
+             "r" {
+              :type :expr, :by "root", :at 1540032275887, :id "k8eurwDYs_"
+              :data {
+               "T" {:type :leaf, :by "root", :at 1540032275887, :text "<<", :id "awrVW3gsEG"}
+               "j" {:type :leaf, :by "root", :at 1540032332752, :text "\"http://~{ip}:8080/main.js", :id "TyLBua8E1I"}
+              }
+             }
             }
            }
           }
