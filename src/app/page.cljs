@@ -7,7 +7,9 @@
             [reel.schema :as reel-schema]
             [cljs.reader :refer [read-string]]
             [app.config :as config]
-            [app.util :refer [get-env!]]))
+            [app.util :refer [get-env!]]
+            [build.util :refer [get-ip!]])
+  (:require-macros [clojure.core.strint :refer [<<]]))
 
 (def base-info
   {:title (:title config/site), :icon (:icon config/site), :ssr nil, :inline-html nil})
@@ -17,7 +19,7 @@
    ""
    (merge
     base-info
-    {:styles ["/entry/main.css" (:dev-ui config/site)],
+    {:styles [(<< "http://~{(get-ip!)}:8100/main.css") "/entry/main.css"],
      :scripts ["/client.js"],
      :inline-styles []})))
 

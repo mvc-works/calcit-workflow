@@ -1,7 +1,5 @@
 
-(ns app.config
-  (:require [app.util :refer [get-env!]] [build.util :refer [get-ip!]])
-  (:require-macros [clojure.core.strint :refer [<<]]))
+(ns app.config (:require [app.util :refer [get-env!]]))
 
 (def bundle-builds #{"release" "local-bundle"})
 
@@ -12,7 +10,7 @@
 
 (def site
   {:storage "workflow",
-   :dev-ui (<< "http://~{(get-ip!)}:8080/main.js"),
+   :dev-ui "http://localhost:8100/main.css",
    :release-ui "http://cdn.tiye.me/favored-fonts/main.css",
    :cdn-url "http://cdn.tiye.me/calcit-workflow/",
    :cdn-folder "tiye.me:cdn/calcit-workflow",
