@@ -1361,7 +1361,7 @@
                   :type :expr, :by "root", :at 1540054322633, :id "-dSvaCju4V"
                   :data {
                    "T" {:type :leaf, :by "root", :at 1540054322633, :text "<<", :id "Rc2MxVkDKS"}
-                   "j" {:type :leaf, :by "root", :at 1540054360936, :text "\"http://~{(get-ip!)}:8100/main.css", :id "BOqoktJp_V"}
+                   "j" {:type :leaf, :by "rJG4IHzWf", :at 1540199425707, :text "\"http://~(get-ip!):8100/main.css", :id "BOqoktJp_V"}
                   }
                  }
                  "b" {:type :leaf, :by "root", :at 1522390205329, :text "\"/entry/main.css", :id "Hklhn4Uj9f"}

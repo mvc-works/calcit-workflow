@@ -19,7 +19,7 @@
    ""
    (merge
     base-info
-    {:styles [(<< "http://~{(get-ip!)}:8100/main.css") "/entry/main.css"],
+    {:styles [(<< "http://~(get-ip!):8100/main.css") "/entry/main.css"],
      :scripts ["/client.js"],
      :inline-styles []})))
 
