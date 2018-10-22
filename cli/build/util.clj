@@ -5,3 +5,6 @@
 
 (defmacro get-ip! []
   (.getHostAddress (InetAddress/getLocalHost)))
+
+(defmacro inline-resource [resource-path]
+  (slurp resource-path))
