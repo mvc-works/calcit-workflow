@@ -37,10 +37,10 @@ calcit-editor # watching server...
 op=compile calcit-editor # if you need to generate code at once
 ```
 
-Package jar file and send to Clojars:
+Package jar file and send to Clojars with [Meyvn](https://github.com/danielsz/meyvn):
 
 ```bash
-boot deploy
+myven deploy
 ```
 
 ### Workflow
