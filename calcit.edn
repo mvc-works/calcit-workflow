@@ -1100,22 +1100,7 @@
     }
     :proc {
      :type :expr, :time 1499755354983, :id "SkGujdK5aSW"
-     :data {
-      "T" {
-       :type :expr, :time 1499755354983, :id "Bk7ds_t5TBb"
-       :data {
-        "T" {:type :leaf, :author "root", :time 1499755354983, :text "set!", :id "SJ4_i_Y9TH-"}
-        "j" {
-         :type :expr, :time 1499755354983, :id "rkrdodtcTHW"
-         :data {
-          "T" {:type :leaf, :author "root", :time 1499755354983, :text ".-onload", :id "H1Ldo_FcpH-"}
-          "j" {:type :leaf, :author "root", :time 1499755354983, :text "js/window", :id "BJP_idK9arW"}
-         }
-        }
-        "r" {:type :leaf, :author "root", :time 1499755354983, :text "main!", :id "Sku_ouK9aH-"}
-       }
-      }
-     }
+     :data {}
     }
    }
    "app.page" {
