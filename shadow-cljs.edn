@@ -1,13 +1,13 @@
 
 {:source-paths ["src" "cli"]
  :dependencies [[mvc-works/hsl          "0.1.2"]
-                [mvc-works/shell-page   "0.1.8"]
-                [respo                  "0.8.21"]
-                [respo/ui               "0.3.8"]
-                [respo/alerts           "0.3.7"]
-                [respo/value            "0.2.4"]
-                [respo/markdown         "0.2.1"]
-                [respo/reel             "0.3.2"]
+                [mvc-works/shell-page   "0.1.9"]
+                [respo                  "0.9.2"]
+                [respo/ui               "0.3.9"]
+                [respo/alerts           "0.3.8"]
+                [respo/value            "0.2.5"]
+                [respo/markdown         "0.2.4"]
+                [respo/reel             "0.3.4"]
                 [org.clojure/core.incubator "0.1.4"]]
  :repositories {"central" {:url "https://maven.aliyun.com/nexus/content/groups/public/"}
                 "clojars" {:url "https://mirrors.ustc.edu.cn/clojars/"}}
