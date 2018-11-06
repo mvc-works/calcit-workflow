@@ -429,10 +429,10 @@ ms@2.0.0:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
 
-nanoid@^1.0.7:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-1.1.0.tgz#b18e806e1cdbfdbe030374d5cf08a48cbc80b474"
-  integrity sha512-iOCqgXieGrk8/wDt1n9rZS2KB1dYVssemY0NTWjfzVr+1t1gAmdTp1u2+YHppKro3Bk5S+Gs+xmYCfpuXauYXQ==
+nanoid@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-2.0.0.tgz#e1ab4a4b024a38d15531ba34a712a201540de639"
+  integrity sha512-SG2qscLE3iM4C0CNzGrsAojJHSVHMS1J8NnvJ31P1lH8P0hGHOiafmniNJz6w6q7vuoDlV7RdySlJgtqkFEVtQ==
 
 node-libs-browser@^2.0.0:
   version "2.0.0"
@@ -637,10 +637,10 @@ shadow-cljs-jar@1.3.0:
   resolved "https://registry.yarnpkg.com/shadow-cljs-jar/-/shadow-cljs-jar-1.3.0.tgz#e25c4fa57c0b405096250884b164c112654a06a3"
   integrity sha512-KReNVgFVM2ZPPGCP8rsCPqtlee/+SwXyoeEqbAXBO7jlpoNnNee2x4fiRg/Pr/vXGEkV/Ez5l4qdNSU1Na+1Jg==
 
-shadow-cljs@^2.6.23:
-  version "2.6.23"
-  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-2.6.23.tgz#ff5efff12450b70c337137d7d4c4b652f784bcfb"
-  integrity sha512-ZEJ6yBmPgYOC/sC3CxbsPhiu5gaaCnlpKKerfRnUUh6NHc4sY5yAdOjMpB7W9A1JNwr/AQ+doqrfho4lJRS76A==
+shadow-cljs@^2.6.24:
+  version "2.6.24"
+  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-2.6.24.tgz#3c19791a8882321d0c1f9e50aa8d12fff7d10cbe"
+  integrity sha512-Iso1mKpuNS9iS9eSVTwVFP5fIhNrfHI5TdlGX4SM7NBYuPuj78BooePxJdJ6mtawYzgozizMXbOjEfTU2ABUGQ==
   dependencies:
     mkdirp "^0.5.1"
     node-libs-browser "^2.0.0"
@@ -650,12 +650,12 @@ shadow-cljs@^2.6.23:
     which "^1.3.1"
     ws "^3.0.0"
 
-shortid@^2.2.13:
-  version "2.2.13"
-  resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.13.tgz#b2441e71c664ace458a341d343959f677910ef5b"
-  integrity sha512-dBuNnQGKrJNfjunmXI2X7bl1gnMO4PwbNxrTzO1JvilODmL7WyyCtA+DYxe9XunLXmxmgzFIvKPQ6XRAQrr46Q==
+shortid@^2.2.14:
+  version "2.2.14"
+  resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.14.tgz#80db6aafcbc3e3a46850b3c88d39e051b84c8d18"
+  integrity sha512-4UnZgr9gDdA1kaKj/38IiudfC3KHKhDc1zi/HSxd9FQDR0VLwH3/y79tZJLsVYPsJgIjeHjqIWaWVRJUj9qZOQ==
   dependencies:
-    nanoid "^1.0.7"
+    nanoid "^2.0.0"
 
 source-map-support@^0.4.15:
   version "0.4.18"
