@@ -128,6 +128,11 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+classnames@^2.2.5:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 colors@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.0.3.tgz#0433f44d809680fdeb60ed260f1b0c262e82a40b"
@@ -144,6 +149,11 @@ constants-browserify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
   integrity sha1-wguW2MYXdIqvHBYCF2DNJ/y4y3U=
+
+core-js@^2.5.3:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+  integrity sha512-RszJCAxg/PP6uzXVXL6BsxSXx/B05oJAQ2vkJRjyjrEcNVycaqOmNb5OTxZPE3xa5gwZduqza6L9JOCenh/Ecw==
 
 core-util-is@~1.0.0:
   version "1.0.2"
@@ -276,6 +286,14 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
   dependencies:
     md5.js "^1.3.4"
     safe-buffer "^5.1.1"
+
+feather-icons@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/feather-icons/-/feather-icons-4.9.0.tgz#be9c0246639cc0ba75b9c2fd168e303c2a145f34"
+  integrity sha512-1GkivjQpUgLEhVpeeup6JHWJ4EOEyBhbNek/9fA1nmktNQcGjLWHWJYnZCcwsdwVlxDWt/b7DVKUW4JNsk8mqQ==
+  dependencies:
+    classnames "^2.2.5"
+    core-js "^2.5.3"
 
 hash-base@^2.0.0:
   version "2.0.2"
@@ -637,10 +655,10 @@ shadow-cljs-jar@1.3.0:
   resolved "https://registry.yarnpkg.com/shadow-cljs-jar/-/shadow-cljs-jar-1.3.0.tgz#e25c4fa57c0b405096250884b164c112654a06a3"
   integrity sha512-KReNVgFVM2ZPPGCP8rsCPqtlee/+SwXyoeEqbAXBO7jlpoNnNee2x4fiRg/Pr/vXGEkV/Ez5l4qdNSU1Na+1Jg==
 
-shadow-cljs@^2.6.24:
-  version "2.6.24"
-  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-2.6.24.tgz#3c19791a8882321d0c1f9e50aa8d12fff7d10cbe"
-  integrity sha512-Iso1mKpuNS9iS9eSVTwVFP5fIhNrfHI5TdlGX4SM7NBYuPuj78BooePxJdJ6mtawYzgozizMXbOjEfTU2ABUGQ==
+shadow-cljs@^2.7.2:
+  version "2.7.2"
+  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-2.7.2.tgz#dd6c6efe70b5a27ad117702b84a27e8aa7b303fc"
+  integrity sha512-eYnwFrVuhOYh/4aTidwcVzH95afsSJbGdgNuk2WvDL1zsBzQipEUOsIkEVKgEjhrqOkUcOI+GtJqJ4JyxYJdEA==
   dependencies:
     mkdirp "^0.5.1"
     node-libs-browser "^2.0.0"
