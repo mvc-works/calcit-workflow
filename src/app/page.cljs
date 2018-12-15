@@ -8,7 +8,7 @@
             [cljs.reader :refer [read-string]]
             [app.config :as config]
             [app.util :refer [get-env!]]
-            [build.util :refer [get-ip!]])
+            [cumulo-util.build :refer [get-ip!]])
   (:require-macros [clojure.core.strint :refer [<<]]))
 
 (def base-info
