@@ -5,23 +5,23 @@
 
 (defn sh! [command]
   (println command)
-  (println (sh "bash" "-c" command)))
+  (println (:out (sh "bash" "-c" command))))
 
 (defn watch []
   (shadow/watch :client))
+
+(defn build-cdn []
+  (sh! "rm -rf dist/*")
+  (shadow/release :client)
+  (shadow/compile :page)
+  (sh! "release=true cdn=true node target/page.js")
+  (sh! "cp entry/manifest.json dist/"))
 
 (defn build []
   (sh! "rm -rf dist/*")
   (shadow/release :client)
   (shadow/compile :page)
-  (sh! "mode=release node target/page.js")
-  (sh! "cp entry/manifest.json dist/"))
-
-(defn build-local []
-  (sh! "rm -rf dist/*")
-  (shadow/release :client)
-  (shadow/compile :page)
-  (sh! "mode=local-bundle node target/page.js")
+  (sh! "release=true node target/page.js")
   (sh! "cp entry/manifest.json dist/"))
 
 (defn page []

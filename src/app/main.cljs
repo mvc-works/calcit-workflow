@@ -28,6 +28,7 @@
 (def ssr? (some? (js/document.querySelector "meta.respo-ssr")))
 
 (defn main! []
+  (println "Running mode:" (if config/dev? "dev" "release"))
   (if ssr? (render-app! realize-ssr!))
   (render-app! render!)
   (add-watch *reel :changes (fn [] (render-app! render!)))
