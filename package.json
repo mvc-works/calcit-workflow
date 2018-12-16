@@ -9,9 +9,9 @@
     "repl": "rlwrap shadow-cljs clj-repl",
     "build-cdn": "shadow-cljs clj-run build.main/build-cdn",
     "build": "shadow-cljs clj-run build.main/build",
+    "upload": "lumo -c cli/:src/ -m build.upload",
     "up": "yarn build-cdn && yarn upload",
     "page": "shadow-cljs clj-run build.main/page",
-    "upload": "lumo -c cli/:src/ -m build.upload",
     "ln": "cd target && rm -f entry && ln -s ../entry"
   },
   "repository": {

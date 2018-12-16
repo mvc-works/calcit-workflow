@@ -7,7 +7,6 @@
             [reel.schema :as reel-schema]
             [cljs.reader :refer [read-string]]
             [app.config :as config]
-            [app.util :refer [get-env!]]
             [cumulo-util.build :refer [get-ip!]])
   (:require-macros [clojure.core.strint :refer [<<]]))
 
