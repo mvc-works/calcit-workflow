@@ -6,7 +6,6 @@
   "scripts": {
     "watch": "shadow-cljs watch client",
     "serve": "http-server dist -s",
-    "repl": "rlwrap shadow-cljs clj-repl",
     "build-cdn": "shadow-cljs clj-run build.main/build-cdn",
     "build": "shadow-cljs clj-run build.main/build",
     "upload": "node target/upload.js",

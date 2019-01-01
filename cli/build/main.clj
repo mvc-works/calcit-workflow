@@ -7,9 +7,6 @@
   (println command)
   (println (:out (sh "bash" "-c" command))))
 
-(defn watch []
-  (shadow/watch :client))
-
 (defn build-cdn []
   (sh! "rm -rf dist/*")
   (shadow/release :client)
