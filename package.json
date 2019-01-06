@@ -21,10 +21,10 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.11.1",
-    "shadow-cljs": "^2.7.9"
+    "shadow-cljs": "^2.7.12"
   },
   "dependencies": {
-    "feather-icons": "^4.9.0",
+    "feather-icons": "^4.10.0",
     "shortid": "^2.2.14"
   }
 }
