@@ -10,6 +10,7 @@
                 [respo/markdown         "0.2.4"]
                 [respo/feather          "0.1.1"]
                 [respo/reel             "0.3.4"]
+                [respo/composer         "0.1.0-a1"]
                 [cumulo/util            "0.1.4"]
                 [org.clojure/core.incubator "0.1.4"]]
  :repositories {"central" {:url "https://maven.aliyun.com/nexus/content/groups/public/"}
