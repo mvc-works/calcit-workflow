@@ -34,5 +34,6 @@
        :on-click (fn [e d! m!] (println (:content store)))})
      (render-markup
       (get templates "container")
-      {:data {:title "HEADER OF PAGE"}, :templates templates}))
+      {:data {:title "HEADER OF PAGE"}, :templates templates}
+      (fn [op op-data] (println op op-data))))
     (when dev? (cursor-> :reel comp-reel states reel {})))))
