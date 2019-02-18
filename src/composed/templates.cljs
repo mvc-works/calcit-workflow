@@ -6,7 +6,7 @@
   :props {}
   :attrs {}
   :presets #{}
-  :style {"border" "1px solid #ccc", "padding" "8px", "margin" "8px", "background-color" "white"}
+  :style {"border" "1px solid #ddd", "padding" "8px", "margin" "8px", "background-color" "white"}
   :children {
    "T" {
     :id "T", :type :box, :layout :row-parted
