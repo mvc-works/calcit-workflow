@@ -1,5 +1,4 @@
 
 calcit.edn -diff linguist-generated
-composer.edn -diff linguist-generated
 src/composed/* -diff linguist-generated
 yarn.lock -diff
