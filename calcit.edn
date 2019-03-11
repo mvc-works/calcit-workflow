@@ -59,6 +59,7 @@
             "x" {:type :leaf, :author "root", :time 1499755354983, :text "button", :id "BkpiOFq6S-"}
             "xT" {:type :leaf, :author "rJG4IHzWf", :time 1512359490531, :text "textarea", :id "BJtB8rGbG"}
             "y" {:type :leaf, :author "root", :time 1499755354983, :text "span", :id "r1Aj_YqaB-"}
+            "yT" {:type :leaf, :by "rJG4IHzWf", :at 1552321107012, :text "input", :id "0iu83JiiXq"}
            }
           }
          }
@@ -201,7 +202,7 @@
            "n" {
             :type :expr, :author "rJG4IHzWf", :time 1512359496483, :id "r1gIUBGZG"
             :data {
-             "T" {:type :leaf, :author "rJG4IHzWf", :time 1512359503438, :text "textarea", :id "r1gIUBGZGleaf"}
+             "T" {:type :leaf, :author "rJG4IHzWf", :time 1512359503438, :text "textarea", :id "r1gIUBGZGleaf", :at 1552321295613, :by "rJG4IHzWf"}
              "j" {
               :type :expr, :author "rJG4IHzWf", :time 1512359504511, :id "BkxOILSfZf"
               :data {
@@ -223,7 +224,7 @@
                 :type :expr, :author "rJG4IHzWf", :time 1512359562842, :id "rk79IrG-M"
                 :data {
                  "T" {:type :leaf, :author "rJG4IHzWf", :time 1512359565393, :text ":placeholder", :id "rk79IrG-Mleaf"}
-                 "j" {:type :leaf, :author "rJG4IHzWf", :time 1512359571859, :text "|Content", :id "S1wB58rz-G"}
+                 "j" {:type :leaf, :author "rJG4IHzWf", :time 1512359571859, :text "\"Content", :id "S1wB58rz-G", :at 1552321072612, :by "rJG4IHzWf"}
                 }
                }
                "p" {
