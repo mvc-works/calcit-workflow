@@ -1,9 +1,7 @@
 
 (ns app.upload
-  (:require ["child_process" :as cp] [app.config :as config])
+  (:require ["child_process" :as cp] [app.config :as config] [cumulo-util.file :refer [sh!]])
   (:require-macros [clojure.core.strint :refer [<<]]))
-
-(defn sh! [command] (println command) (println (.toString (cp/execSync command))))
 
 (defn main! []
   (sh! (<< "rsync -avr --progress dist/* ~(:cdn-folder config/site)"))
