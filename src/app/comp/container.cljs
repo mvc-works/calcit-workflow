@@ -19,11 +19,11 @@
     (textarea
      {:value (:content store),
       :placeholder "Content",
-      :style (merge ui/flex ui/textarea {:height 320}),
+      :style (merge ui/expand ui/textarea {:height 320}),
       :on-input (action-> :content (:value %e))})
     (=< "8px" nil)
     (div
-     {:style ui/flex}
+     {:style ui/expand}
      (comp-md "This is some content with `code`")
      (=< "8px" nil)
      (button
