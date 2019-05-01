@@ -15,8 +15,8 @@
       :else true)))
 
 (def site
-  {:dev-ui "http://localhost:8100/main.css",
-   :release-ui "http://cdn.tiye.me/favored-fonts/main.css",
+  {:dev-ui "http://localhost:8100/main-fonts.css",
+   :release-ui "http://cdn.tiye.me/favored-fonts/main-fonts.css",
    :cdn-url "http://cdn.tiye.me/calcit-workflow/",
    :cdn-folder "tiye.me:cdn/calcit-workflow",
    :title "Calcit",
