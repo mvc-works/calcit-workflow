@@ -655,10 +655,10 @@ shadow-cljs-jar@1.3.1:
   resolved "https://registry.yarnpkg.com/shadow-cljs-jar/-/shadow-cljs-jar-1.3.1.tgz#a5f8ab7664b40e11345837e4c6bce8e0ac9b2cc3"
   integrity sha512-IJSm4Gfu/wWDsOQ0wNrSxuaGdjzsd78us+3bop3cpWsoO2Igdu6VIBItYrZHRRBKl5LIZKXfnSh/2eWG3C1EFw==
 
-shadow-cljs@^2.8.35:
-  version "2.8.35"
-  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-2.8.35.tgz#7d71cd1f50cbc74e1c2593238d9d88526e1c1b36"
-  integrity sha512-Em0y0T0vM3TT1BuZssZ6OCwgJODawT2I7bfGCiU5B7HEcrUEpfg6/SSjnwYNUT5LWvfDBypznFRW+Hc5peaOeg==
+shadow-cljs@^2.8.36:
+  version "2.8.36"
+  resolved "https://registry.yarnpkg.com/shadow-cljs/-/shadow-cljs-2.8.36.tgz#0e7c4c1a3eddda333f62b476e92da5aada9d31d8"
+  integrity sha512-xaoTjYkdxwOVS7LGa8auxkky9Rydjat5xUwG5cc5hpK8z3AXwJRu8lmlKcUSUGgCaJgbG4EpIwP45SgDT1rwVw==
   dependencies:
     mkdirp "^0.5.1"
     node-libs-browser "^2.0.0"
