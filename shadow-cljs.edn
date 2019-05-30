@@ -11,6 +11,7 @@
                 [respo/feather          "0.1.1"]
                 [respo/reel             "0.3.5"]
                 [cumulo/util            "0.1.10"]
+                [medley                 "1.1.0"]
                 [org.clojure/core.incubator "0.1.4"]]
  :repositories {"central" {:url "https://maven.aliyun.com/nexus/content/groups/public/"}
                 "clojars" {:url "https://mirrors.ustc.edu.cn/clojars/"}}
