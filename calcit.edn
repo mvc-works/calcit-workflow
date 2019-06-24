@@ -590,13 +590,6 @@
            "j" {:type :leaf, :by "root", :at 1528008965359, :text "\"http://cdn.tiye.me/calcit-workflow/", :id "Bye6-ZzbxX"}
           }
          }
-         "wT" {
-          :type :expr, :by "root", :at 1528008973460, :id "H1xHfWfWeX"
-          :data {
-           "T" {:type :leaf, :by "root", :at 1528008977180, :text ":cdn-folder", :id "H1xHfWfWeXleaf"}
-           "j" {:type :leaf, :by "root", :at 1528008998681, :text "\"tiye.me:cdn/calcit-workflow", :id "BySKfbfWx7"}
-          }
-         }
          "y" {
           :type :expr, :by "root", :at 1527868456422, :id "HJlgNn11gm"
           :data {
@@ -616,13 +609,6 @@
           :data {
            "T" {:type :leaf, :by "rJG4IHzWf", :at 1544956719115, :text ":storage-key", :id "uzAHSBrxME"}
            "j" {:type :leaf, :by "rJG4IHzWf", :at 1544956719115, :text "\"workflow", :id "3M_DNn-aUN"}
-          }
-         }
-         "yr" {
-          :type :expr, :by "root", :at 1528009081454, :id "S1WFZfblQ"
-          :data {
-           "T" {:type :leaf, :by "root", :at 1528009091856, :text ":upload-folder", :id "S1WFZfblQleaf"}
-           "j" {:type :leaf, :by "root", :at 1528009114532, :text "\"tiye.me:repo/mvc-works/calcit-workflow/", :id "rJmnY-f-g7"}
           }
          }
         }
@@ -1910,129 +1896,6 @@
     }
     :proc {
      :type :expr, :time 1499755354983, :id "HJ41lsuY5pSZ"
-     :data {}
-    }
-   }
-   "app.upload" {
-    :ns {
-     :type :expr, :by "root", :at 1545586542127, :id "4FMjyIwRcM"
-     :data {
-      "T" {:type :leaf, :by "root", :at 1545586542127, :text "ns", :id "dlgJb1-8Cf"}
-      "j" {:type :leaf, :by "root", :at 1545586542127, :text "app.upload", :id "DAmU9hNfBL"}
-      "r" {
-       :type :expr, :by "root", :at 1545586595569, :id "E6COKLo2x"
-       :data {
-        "T" {:type :leaf, :by "root", :at 1545586596242, :text ":require", :id "-NMHlxr9QE"}
-        "j" {
-         :type :expr, :by "root", :at 1545586596402, :id "wtz3JkaJbn"
-         :data {
-          "T" {:type :leaf, :by "root", :at 1545586596595, :text "[]", :id "ZqWs6Jy0vT"}
-          "j" {:type :leaf, :by "root", :at 1545586601450, :text "\"child_process", :id "ErowPpEyQo"}
-          "r" {:type :leaf, :by "root", :at 1545586603642, :text ":as", :id "HSbV9JQYq"}
-          "v" {:type :leaf, :by "root", :at 1545586605027, :text "cp", :id "7XmYBM-_P_"}
-         }
-        }
-        "r" {
-         :type :expr, :by "root", :at 1545586605993, :id "HB1iw7_1xG"
-         :data {
-          "T" {:type :leaf, :by "root", :at 1545586606312, :text "[]", :id "HB1iw7_1xGleaf"}
-          "j" {:type :leaf, :by "root", :at 1545586608668, :text "app.config", :id "ZTAc3As-z"}
-          "r" {:type :leaf, :by "root", :at 1545586609855, :text ":as", :id "KfjpLv0_1S"}
-          "v" {:type :leaf, :by "root", :at 1545586610655, :text "config", :id "NYZSRMJvMU"}
-         }
-        }
-        "v" {
-         :type :expr, :by "rJG4IHzWf", :at 1555607837181, :id "U_fvBYVYU3"
-         :data {
-          "T" {:type :leaf, :by "rJG4IHzWf", :at 1555607837517, :text "[]", :id "U_fvBYVYU3leaf"}
-          "j" {:type :leaf, :by "rJG4IHzWf", :at 1555607850083, :text "cumulo-util.file", :id "w5maJjd5B"}
-          "r" {:type :leaf, :by "rJG4IHzWf", :at 1555607851003, :text ":refer", :id "jMvpJPK82C"}
-          "v" {
-           :type :expr, :by "rJG4IHzWf", :at 1555607851236, :id "W4AEl3ZCPh"
-           :data {
-            "T" {:type :leaf, :by "rJG4IHzWf", :at 1555607851415, :text "[]", :id "kYs4sKTZvG"}
-            "j" {:type :leaf, :by "rJG4IHzWf", :at 1555607852188, :text "sh!", :id "RZc4lg4qxa"}
-           }
-          }
-         }
-        }
-       }
-      }
-      "v" {
-       :type :expr, :by "root", :at 1545586631160, :id "esptIqibHz"
-       :data {
-        "T" {:type :leaf, :by "root", :at 1545586631160, :text ":require-macros", :id "32L2Nx9Kee"}
-        "j" {
-         :type :expr, :by "root", :at 1545586631160, :id "HtFb_oQS7E"
-         :data {
-          "T" {:type :leaf, :by "root", :at 1545586631160, :text "[]", :id "dz8kaZUKZj"}
-          "j" {:type :leaf, :by "root", :at 1545586631160, :text "clojure.core.strint", :id "CEltNZ9gIs"}
-          "r" {:type :leaf, :by "root", :at 1545586631160, :text ":refer", :id "hEZVaADTYC"}
-          "v" {
-           :type :expr, :by "root", :at 1545586631160, :id "krxH15Mkxx"
-           :data {
-            "T" {:type :leaf, :by "root", :at 1545586631160, :text "[]", :id "Kt8WGz0sEA"}
-            "j" {:type :leaf, :by "root", :at 1545586631160, :text "<<", :id "SN16jc9_Le"}
-           }
-          }
-         }
-        }
-       }
-      }
-     }
-    }
-    :defs {
-     "main!" {
-      :type :expr, :by "root", :at 1545586544291, :id "yih_pWJVFk"
-      :data {
-       "T" {:type :leaf, :by "root", :at 1545586544291, :text "defn", :id "2znK6W0Lpu"}
-       "j" {:type :leaf, :by "root", :at 1545586544291, :text "main!", :id "jwxWEPM40A"}
-       "r" {
-        :type :expr, :by "root", :at 1545586544291, :id "lW9uGoHXTc"
-        :data {}
-       }
-       "v" {
-        :type :expr, :by "root", :at 1545586573133, :id "B2XeouD3v"
-        :data {
-         "T" {:type :leaf, :by "root", :at 1545586576884, :text "sh!", :id "B2XeouD3vleaf"}
-         "j" {
-          :type :expr, :by "root", :at 1545586638649, :id "LE4VT4U8V"
-          :data {
-           "T" {:type :leaf, :by "root", :at 1545586639141, :text "<<", :id "f-_UoP25o"}
-           "j" {:type :leaf, :by "root", :at 1545586651864, :text "\"rsync -avr --progress dist/* ~(:cdn-folder config/site)", :id "NuUriZutJ"}
-          }
-         }
-        }
-       }
-       "x" {
-        :type :expr, :by "root", :at 1545586653797, :id "tz6VNdPz2"
-        :data {
-         "T" {:type :leaf, :by "root", :at 1545586654990, :text "sh!", :id "tz6VNdPz2leaf"}
-         "j" {
-          :type :expr, :by "root", :at 1545586655555, :id "z242gaxML"
-          :data {
-           "T" {:type :leaf, :by "root", :at 1545586660346, :text "<<", :id "B4M7obVd1A"}
-           "j" {:type :leaf, :by "root", :at 1545586670325, :text "\"rsync -avr --progress dist/{index.html,manifest.json} ~(:upload-folder config/site)", :id "x-oxPTXZK"}
-          }
-         }
-        }
-       }
-      }
-     }
-     "reload!" {
-      :type :expr, :by "root", :at 1545586553637, :id "dbJRTIrSNj"
-      :data {
-       "T" {:type :leaf, :by "root", :at 1545586553637, :text "defn", :id "zMSnFpsu4k"}
-       "j" {:type :leaf, :by "root", :at 1545586553637, :text "reload!", :id "l0OHTHaYBK"}
-       "r" {
-        :type :expr, :by "root", :at 1545586553637, :id "QRs0RPMoL9"
-        :data {}
-       }
-      }
-     }
-    }
-    :proc {
-     :type :expr, :by "root", :at 1545586542127, :id "5q8LsDXFwk"
      :data {}
     }
    }
