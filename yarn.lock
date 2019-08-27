@@ -227,10 +227,10 @@ debug@^2.2.0:
   dependencies:
     ms "2.0.0"
 
-debug@^3.2.6:
-  version "3.2.6"
-  resolved "https://registry.npm.taobao.org/debug/download/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
-  integrity sha1-6D0X3hbYp++3cX7b5fsQE17uYps=
+debug@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.npm.taobao.org/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
   dependencies:
     ms "^2.1.1"
 
@@ -281,7 +281,7 @@ elliptic@^6.0.0:
 
 eventemitter3@^3.0.0:
   version "3.1.2"
-  resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-3.1.2.tgz?cache=0&sync_timestamp=1560950873670&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feventemitter3%2Fdownload%2Feventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
+  resolved "https://registry.npm.taobao.org/eventemitter3/download/eventemitter3-3.1.2.tgz#2d3d48f9c346698fce83a85d7d664e98535df6e7"
   integrity sha1-LT1I+cNGaY/Og6hdfWZOmFNd9uc=
 
 events@^3.0.0:
@@ -297,20 +297,20 @@ evp_bytestokey@^1.0.0, evp_bytestokey@^1.0.3:
     md5.js "^1.3.4"
     safe-buffer "^5.1.1"
 
-feather-icons@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.npm.taobao.org/feather-icons/download/feather-icons-4.24.0.tgz#5b2245cfc7fd8845344ccd86a28f29fae0c350b6"
-  integrity sha1-WyJFz8f9iEU0TM2Goo8p+uDDULY=
+feather-icons@^4.24.1:
+  version "4.24.1"
+  resolved "https://registry.npm.taobao.org/feather-icons/download/feather-icons-4.24.1.tgz#f31a83c5a2d1c040576aacb7882d8acdfb7f7f09"
+  integrity sha1-8xqDxaLRwEBXaqy3iC2Kzft/fwk=
   dependencies:
     classnames "^2.2.5"
     core-js "^3.1.3"
 
 follow-redirects@^1.0.0:
-  version "1.7.0"
-  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
-  integrity sha1-SJ68GY3A5/ZBZ70jsDxMGbV4THY=
+  version "1.8.0"
+  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.8.0.tgz#dcf34930bcfdb6c1eb22b8eb7c457ec95a3dcf40"
+  integrity sha1-3PNJMLz9tsHrIrjrfEV+yVo9z0A=
   dependencies:
-    debug "^3.2.6"
+    debug "^4.1.1"
 
 hash-base@^3.0.0:
   version "3.0.4"
@@ -465,9 +465,9 @@ ms@^2.1.1:
   integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
 nanoid@^2.0.0:
-  version "2.0.3"
-  resolved "https://registry.npm.taobao.org/nanoid/download/nanoid-2.0.3.tgz#dde999e173bc9d7bd2ee2746b89909ade98e075e"
-  integrity sha1-3emZ4XO8nXvS7idGuJkJremOB14=
+  version "2.0.4"
+  resolved "https://registry.npm.taobao.org/nanoid/download/nanoid-2.0.4.tgz?cache=0&sync_timestamp=1566699469253&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnanoid%2Fdownload%2Fnanoid-2.0.4.tgz#4889355c9ce8e24efad7c65945a4a2875ac3e8f4"
+  integrity sha1-SIk1XJzo4k7618ZZRaSih1rD6PQ=
 
 node-libs-browser@^2.0.0:
   version "2.2.1"
@@ -555,9 +555,9 @@ pbkdf2@^3.0.3:
     sha.js "^2.4.8"
 
 portfinder@^1.0.13:
-  version "1.0.22"
-  resolved "https://registry.npm.taobao.org/portfinder/download/portfinder-1.0.22.tgz#abd10a488b5696e98ee25c60731f8ae0b76f8ddd"
-  integrity sha1-q9EKSItWlumO4lxgcx+K4Ldvjd0=
+  version "1.0.23"
+  resolved "https://registry.npm.taobao.org/portfinder/download/portfinder-1.0.23.tgz#894db4bcc5daf02b6614517ce89cd21a38226b82"
+  integrity sha1-iU20vMXa8CtmFFF86JzSGjgia4I=
   dependencies:
     async "^1.5.2"
     debug "^2.2.0"
@@ -684,10 +684,10 @@ shadow-cljs-jar@1.3.1:
   resolved "https://registry.npm.taobao.org/shadow-cljs-jar/download/shadow-cljs-jar-1.3.1.tgz#a5f8ab7664b40e11345837e4c6bce8e0ac9b2cc3"
   integrity sha1-pfirdmS0DhE0WDfkxrzo4KybLMM=
 
-shadow-cljs@^2.8.50:
-  version "2.8.50"
-  resolved "https://registry.npm.taobao.org/shadow-cljs/download/shadow-cljs-2.8.50.tgz#2bdab954bf23c6397f6660d2e49c5ca864d0aa3e"
-  integrity sha1-K9q5VL8jxjl/ZmDS5JxcqGTQqj4=
+shadow-cljs@^2.8.52:
+  version "2.8.52"
+  resolved "https://registry.npm.taobao.org/shadow-cljs/download/shadow-cljs-2.8.52.tgz#56a4be5f0f22c6929a358ab3ace81ec0c34aab1b"
+  integrity sha1-VqS+Xw8ixpKaNYqzrOgewMNKqxs=
   dependencies:
     mkdirp "^0.5.1"
     node-libs-browser "^2.0.0"
