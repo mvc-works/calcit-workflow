@@ -4,7 +4,7 @@
             [respo-ui.core :as ui]
             [respo.core
              :refer
-             [defcomp cursor-> action-> mutation-> <> div button textarea span input]]
+             [defcomp defeffect cursor-> <> div button textarea span input]]
             [respo.comp.space :refer [=<]]
             [reel.comp.reel :refer [comp-reel]]
             [respo-md.comp.md :refer [comp-md]]
@@ -20,7 +20,7 @@
      {:value (:content store),
       :placeholder "Content",
       :style (merge ui/expand ui/textarea {:height 320}),
-      :on-input (action-> :content (:value %e))})
+      :on-input (fn [e d! m!] (d! :content (:value e)))})
     (=< "8px" nil)
     (div
      {:style ui/expand}
