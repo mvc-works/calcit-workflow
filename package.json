@@ -19,8 +19,8 @@
   "author": "jiyinyiyong",
   "license": "MIT",
   "devDependencies": {
-    "http-server": "^0.11.1",
-    "shadow-cljs": "^2.8.74"
+    "http-server": "^0.12.0",
+    "shadow-cljs": "^2.8.76"
   },
   "dependencies": {
     "feather-icons": "^4.24.1",
