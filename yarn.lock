@@ -246,7 +246,7 @@ diffie-hellman@^5.0.0:
 
 domain-browser@^1.1.1:
   version "1.2.0"
-  resolved "https://registry.npm.taobao.org/domain-browser/download/domain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
+  resolved "https://registry.npm.taobao.org/domain-browser/download/domain-browser-1.2.0.tgz?cache=0&sync_timestamp=1575171286896&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomain-browser%2Fdownload%2Fdomain-browser-1.2.0.tgz#3d31f50191a6749dd1375a7f522e823d42e54eda"
   integrity sha1-PTH1AZGmdJ3RN1p/Ui6CPULlTto=
 
 ecstatic@^3.3.2:
@@ -684,10 +684,10 @@ shadow-cljs-jar@1.3.1:
   resolved "https://registry.npm.taobao.org/shadow-cljs-jar/download/shadow-cljs-jar-1.3.1.tgz#a5f8ab7664b40e11345837e4c6bce8e0ac9b2cc3"
   integrity sha1-pfirdmS0DhE0WDfkxrzo4KybLMM=
 
-shadow-cljs@^2.8.76:
-  version "2.8.76"
-  resolved "https://registry.npm.taobao.org/shadow-cljs/download/shadow-cljs-2.8.76.tgz#241a1a5856976887171df3470a66ea7d2fd6e3a8"
-  integrity sha1-JBoaWFaXaIcXHfNHCmbqfS/W46g=
+shadow-cljs@^2.8.77:
+  version "2.8.77"
+  resolved "https://registry.npm.taobao.org/shadow-cljs/download/shadow-cljs-2.8.77.tgz#8d26df7a1cd8edd8934389443905549d1d3a33f8"
+  integrity sha1-jSbfehzY7diTQ4lEOQVUnR06M/g=
   dependencies:
     mkdirp "^0.5.1"
     node-libs-browser "^2.0.0"
