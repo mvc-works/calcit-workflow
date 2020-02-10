@@ -4,6 +4,8 @@
   "description": "ClojureScript workflow using Calcit Editor",
   "main": "index.js",
   "scripts": {
+    "m2": "clojure -A:depstar && clojure -A:install",
+    "deploy": "clojure -A:depstar && clojure -A:deploy",
     "watch": "shadow-cljs watch client",
     "serve": "http-server dist -s",
     "build-cdn": "shadow-cljs clj-run build.main/build-cdn",
