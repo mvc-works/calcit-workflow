@@ -6,3 +6,5 @@
 .shadow-cljs/
 
 .nrepl-port
+
+.DS_Store
