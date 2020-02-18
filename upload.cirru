@@ -4,7 +4,7 @@
   :uploads $ []
     {}
       :from |dist/*
-      :to |cdn/calcit-workflow/
+      :to |/web-assets/cdn/calcit-workflow/
     {}
       :from |dist/{index.html,manifest.json}
-      :to |repo/mvc-works/calcit-workflow/
+      :to |/web-assets/repo/mvc-works/calcit-workflow/
