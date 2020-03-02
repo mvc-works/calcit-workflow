@@ -22,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "http-server": "^0.12.1",
-    "shadow-cljs": "^2.8.87"
+    "shadow-cljs": "^2.8.90"
   },
   "dependencies": {
     "feather-icons": "^4.26.0",
