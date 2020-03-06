@@ -1,0 +1,5 @@
+{:version "0.0.1"
+ :group-id "mvc-works"
+ :artifact-id "calcit-workflow"
+ :skip-tag true
+ :scm-url "https://github.com/mvc-works/calcit-workflow"}
