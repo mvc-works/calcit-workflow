@@ -12,7 +12,7 @@
     [respo/feather "0.1.1"]
     [respo/reel "0.3.5"]
     [cumulo/util "0.1.10"]
-    [medley "1.2.0"]
+    [medley "1.3.0"]
     [appliedscience/js-interop "0.2.4"]
     [org.clojure/core.incubator "0.1.4"]
   ]
