@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "deploy": "clj -A:release",
+    "m2": "clj -A:release install",
     "watch": "shadow-cljs watch client",
     "serve": "http-server dist -s",
     "build-cdn": "shadow-cljs clj-run build.main/build-cdn",
