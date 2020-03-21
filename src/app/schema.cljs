@@ -1,4 +1,4 @@
 
 (ns app.schema )
 
-(def store {:states {}, :content ""})
+(def store {:states {:cursor []}})

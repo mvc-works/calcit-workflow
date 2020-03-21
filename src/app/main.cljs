@@ -16,7 +16,9 @@
 
 (defn dispatch! [op op-data]
   (when config/dev? (println "Dispatch:" op))
-  (reset! *reel (reel-updater updater @*reel op op-data)))
+  (if (vector? op)
+    (recur :states [op op-data])
+    (reset! *reel (reel-updater updater @*reel op op-data))))
 
 (def mount-target (.querySelector js/document ".app"))
 
