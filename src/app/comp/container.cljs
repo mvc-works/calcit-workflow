@@ -22,13 +22,13 @@
       :placeholder "Content",
       :style (merge ui/expand ui/textarea {:height 320}),
       :on-input (fn [e d!] (d! cursor (assoc state :content (:value e))))})
-    (=< "8px" nil)
+    (=< 8 nil)
     (div
      {:style ui/expand}
      (comp-md "This is some content with `code`")
      (=< "8px" nil)
      (button
       {:style ui/button,
-       :inner-text (str "run"),
+       :inner-text "Run",
        :on-click (fn [e d!] (println (:content state)))}))
     (when dev? (comp-reel (>> states :reel) reel {})))))
