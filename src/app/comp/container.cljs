@@ -21,7 +21,7 @@
      {:value (:content state),
       :placeholder "Content",
       :style (merge ui/expand ui/textarea {:height 320}),
-      :on-input (fn [e d! m!] (d! cursor (assoc state :content (:value e))))})
+      :on-input (fn [e d!] (d! cursor (assoc state :content (:value e))))})
     (=< "8px" nil)
     (div
      {:style ui/expand}
@@ -30,5 +30,5 @@
      (button
       {:style ui/button,
        :inner-text (str "run"),
-       :on-click (fn [e d! m!] (println (:content state)))}))
+       :on-click (fn [e d!] (println (:content state)))}))
     (when dev? (comp-reel (>> states :reel) reel {})))))
