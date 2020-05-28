@@ -20,7 +20,6 @@
   "author": "jiyinyiyong",
   "license": "MIT",
   "devDependencies": {
-    "node-notifier": "7.0.1",
     "shadow-cljs": "^2.9.7"
   },
   "dependencies": {
