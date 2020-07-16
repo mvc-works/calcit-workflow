@@ -20,7 +20,7 @@
   "author": "jiyinyiyong",
   "license": "MIT",
   "devDependencies": {
-    "shadow-cljs": "^2.10.13"
+    "shadow-cljs": "^2.10.15"
   },
   "dependencies": {
     "feather-icons": "^4.28.0",
