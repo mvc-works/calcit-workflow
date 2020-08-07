@@ -26,7 +26,6 @@
       :modules {
         :client {:init-fn app.main/main!}
       }
-      :devtools {:after-load app.main/reload!}
       :compiler-options {:infer-externs :auto}
       :release {
         :output-dir "dist/", :module-hash-names 8
@@ -35,7 +34,6 @@
     }
     :page {
       :target :node-script, :output-to "target/page.js", :main app.page/main!
-      :devtools {:after-load app.page/main!}
     }
   }
 }

@@ -235,7 +235,7 @@
                           |l $ {} (:type :expr) (:by |root) (:at 1519699101175) (:id |rJf0NrzdG)
                             :data $ {}
                               |T $ {} (:type :leaf) (:by |root) (:at 1519699101706) (:text |comp-md) (:id |Sylrj4Hz_zleaf)
-                              |j $ {} (:type :leaf) (:by |root) (:at 1519699121173) (:text "||This is some content with `code`") (:id |rye8s4rfuG)
+                              |j $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1596818901713) (:text "||This is some content with `code`") (:id |rye8s4rfuG)
                           |o $ {} (:type :expr) (:time 1499755354983) (:id |SytMrHM_M)
                             :data $ {}
                               |T $ {} (:type :leaf) (:author |root) (:time 1499755354983) (:text |=<) (:id |Hy2MidYq6BZ)
@@ -725,7 +725,8 @@
               |y $ {} (:type :expr) (:time 1499755354983) (:id |HJXoiuY9THb)
                 :data $ {}
                   |T $ {} (:type :leaf) (:author |root) (:time 1499755354983) (:text |println) (:id |HyVosdFqaBb)
-                  |j $ {} (:type :leaf) (:author |root) (:time 1499755354983) (:text "||Code updated.") (:id |BkHisOK5TSZ)
+                  |j $ {} (:type :leaf) (:author |root) (:time 1499755354983) (:text "||Code updated.") (:id |BkHisOK5TSZ) (:at 1596818890934) (:by |rJG4IHzWf)
+              |b $ {} (:type :leaf) (:by |rJG4IHzWf) (:at 1596816535970) (:text |^:dev/after-load) (:id |NRbYJ7pWu)
           |mount-target $ {} (:type :expr) (:time 1499755354983) (:id |B1qRjdF9aH-)
             :data $ {}
               |T $ {} (:type :leaf) (:author |root) (:time 1499755354983) (:text |def) (:id |S1oAjut5TBZ)
