@@ -40,7 +40,9 @@
     (when (some? raw) (dispatch! :hydrate-storage (read-string raw))))
   (println "App started."))
 
-(defn reload! []
+(defn ^:dev/after-load
+  reload!
+  []
   (clear-cache!)
   (reset! *reel (refresh-reel @*reel schema/store updater))
   (println "Code updated."))
