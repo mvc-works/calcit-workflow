@@ -4,7 +4,7 @@
   :dependencies [
     [mvc-works/hsl "0.1.2"]
     [mvc-works/shell-page "0.1.15"]
-    [respo "0.13.3-a1"]
+    [respo "0.13.3"]
     [respo/ui "0.3.15"]
     [respo/alerts "0.5.5"]
     [respo/markdown "0.2.5"]
@@ -32,8 +32,6 @@
         :build-options {:manifest-name "assets.edn"}
       }
     }
-    :page {
-      :target :node-script, :output-to "target/page.js", :main app.page/main!
-    }
+    :page {:target :node-script, :output-to "target/page.js", :main app.page/main!}
   }
 }
