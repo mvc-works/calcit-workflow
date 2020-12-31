@@ -7,7 +7,7 @@
     [respo "0.13.4"]
     [respo/ui "0.3.16"]
     [respo/alerts "0.5.5"]
-    [respo/markdown "0.2.5"]
+    [respo/markdown "0.2.6"]
     [respo/feather "0.1.1"]
     [respo/reel "0.4.2"]
     [cumulo/util "0.1.12"]
